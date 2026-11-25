@@ -33,7 +33,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg-canvas: #09090B;
     --bg-sheet: #18181B;
     --text-main: #F4F4F5;
@@ -45,6 +45,87 @@
     --border-dark: #3F3F46;
     --card-bg: #202023;
     --shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+  }
+}
+
+html[data-theme="dark"] {
+  --bg-canvas: #09090B;
+  --bg-sheet: #18181B;
+  --text-main: #F4F4F5;
+  --text-muted: #D4D4D8;
+  --text-dim: #A1A1AA;
+  --accent: #38BDF8;
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --border: #27272A;
+  --border-dark: #3F3F46;
+  --card-bg: #202023;
+  --shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Floating Right-Side Theme Button */
+#theme-toggle-floating {
+  position: fixed;
+  right: 22px;
+  top: 24px;
+  z-index: 920;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg-sheet);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), border-color 0.2s;
+  color: var(--text-main);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#theme-toggle-floating:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  border-color: var(--accent);
+}
+#theme-toggle-floating:active {
+  transform: scale(0.92);
+}
+.theme-icon-sun {
+  display: none;
+  color: #F59E0B;
+}
+.theme-icon-moon {
+  display: flex;
+  color: var(--text-main);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-icon-sun {
+    display: flex;
+  }
+  :root:not([data-theme="light"]) .theme-icon-moon {
+    display: none;
+  }
+}
+html[data-theme="dark"] .theme-icon-sun {
+  display: flex;
+}
+html[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+html[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+html[data-theme="light"] .theme-icon-moon {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  #theme-toggle-floating {
+    top: 14px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -683,7 +764,7 @@ body {
     print-color-adjust: exact !important;
   }
 
-  .cv-toolbar {
+  .cv-toolbar, #theme-toggle-floating {
     display: none !important;
   }
 
@@ -977,6 +1058,28 @@ body {
 </head>
 <body>
 
+<!-- Floating Right-Side Theme Button (Screen Only) -->
+<button id="theme-toggle-floating" aria-label="Toggle dark and light mode" title="Toggle theme">
+  <span class="theme-icon-moon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </span>
+  <span class="theme-icon-sun" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </span>
+</button>
+
 <!-- Floating Action Bar -->
 <div class="cv-toolbar">
   <a href="./index.html" class="cv-btn">← Back to Portfolio</a>
@@ -1178,6 +1281,26 @@ body {
 </main>
 
 <script>
+// Theme Controller
+(function() {
+  const toggleBtn = document.getElementById('theme-toggle-floating');
+  if (!toggleBtn) return;
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('janak_theme', theme);
+    toggleBtn.setAttribute('title', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Pro Dark Mode');
+  }
+  const saved = localStorage.getItem('janak_theme');
+  applyTheme(saved === 'dark' || saved === 'light' ? saved : getSystemTheme());
+  toggleBtn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || getSystemTheme();
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
+
 // Dynamic Sync with data.json
 (function() {
   fetch('./data.json')

@@ -61,22 +61,24 @@
   --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Native Dark Mode Adaptation */
+/* ==========================================================
+   PRO APPLE DARK MODE SYSTEM (OLED DEEP BLACKS & ELEVATED SURFACES)
+   ========================================================== */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #000000;
-    --bg-grouped: #121214;
-    --surface: #1C1C1E;
-    --surface-secondary: #2C2C2E;
-    --surface-tertiary: #3A3A3C;
+    --bg-grouped: #0D0D11;
+    --surface: #141417;
+    --surface-secondary: #1B1B1F;
+    --surface-tertiary: #26262B;
 
     --text-1: #F5F5F7;
-    --text-2: #8E8E93;
-    --text-3: #636366;
+    --text-2: #A1A1A8;
+    --text-3: #6C6C74;
 
-    --separator: rgba(255, 255, 255, 0.12);
-    --separator-opaque: #38383A;
-    --glass-bg: rgba(28, 28, 30, 0.82);
+    --separator: rgba(255, 255, 255, 0.09);
+    --separator-opaque: #222228;
+    --glass-bg: rgba(18, 18, 22, 0.88);
     --glass-border: rgba(255, 255, 255, 0.12);
 
     --accent: #0A84FF;
@@ -85,13 +87,177 @@
     --success: #30D158;
     --success-subtle: rgba(48, 209, 88, 0.16);
     --tint-fill: rgba(255, 255, 255, 0.08);
-    --tint-fill-hover: rgba(255, 255, 255, 0.14);
+    --tint-fill-hover: rgba(255, 255, 255, 0.15);
     --tint-fill-active: rgba(255, 255, 255, 0.22);
 
-    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
-    --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.45);
-    --shadow-sheet: 0 20px 48px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.3);
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+    --shadow-hover: 0 12px 36px rgba(0, 0, 0, 0.65), 0 0 24px rgba(10, 132, 255, 0.14);
+    --shadow-sheet: 0 24px 54px rgba(0, 0, 0, 0.7), 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+}
+
+html[data-theme="dark"] {
+  --bg: #000000;
+  --bg-grouped: #0D0D11;
+  --surface: #141417;
+  --surface-secondary: #1B1B1F;
+  --surface-tertiary: #26262B;
+
+  --text-1: #F5F5F7;
+  --text-2: #A1A1A8;
+  --text-3: #6C6C74;
+
+  --separator: rgba(255, 255, 255, 0.09);
+  --separator-opaque: #222228;
+  --glass-bg: rgba(18, 18, 22, 0.88);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  --accent: #0A84FF;
+  --accent-pressed: #409CFF;
+  --accent-subtle: rgba(10, 132, 255, 0.16);
+  --success: #30D158;
+  --success-subtle: rgba(48, 209, 88, 0.16);
+  --tint-fill: rgba(255, 255, 255, 0.08);
+  --tint-fill-hover: rgba(255, 255, 255, 0.15);
+  --tint-fill-active: rgba(255, 255, 255, 0.22);
+
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 12px 36px rgba(0, 0, 0, 0.65), 0 0 24px rgba(10, 132, 255, 0.14);
+  --shadow-sheet: 0 24px 54px rgba(0, 0, 0, 0.7), 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Pro Dark Polish on Key Components */
+html[data-theme="dark"] .proj,
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .proj {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.008) 100%), #141418;
+    border-color: rgba(255, 255, 255, 0.09);
+  }
+  :root:not([data-theme="light"]) .proj:hover {
+    border-color: rgba(10, 132, 255, 0.45);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 24px rgba(10, 132, 255, 0.15);
+  }
+  :root:not([data-theme="light"]) .facts {
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  :root:not([data-theme="light"]) .portrait {
+    background: #16161A;
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+  :root:not([data-theme="light"]) .tag {
+    background: rgba(255, 255, 255, 0.08);
+    color: #D1D1D6;
+  }
+  :root:not([data-theme="light"]) .tag.personal {
+    background: rgba(10, 132, 255, 0.18);
+    color: #38BDF8;
+  }
+}
+html[data-theme="dark"] .proj {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.008) 100%), #141418;
+  border-color: rgba(255, 255, 255, 0.09);
+}
+html[data-theme="dark"] .proj:hover {
+  border-color: rgba(10, 132, 255, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 24px rgba(10, 132, 255, 0.15);
+}
+html[data-theme="dark"] .facts {
+  background: #141418;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .portrait {
+  background: #16161A;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+html[data-theme="dark"] .tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: #D1D1D6;
+}
+html[data-theme="dark"] .tag.personal {
+  background: rgba(10, 132, 255, 0.18);
+  color: #38BDF8;
+}
+
+/* ==========================================================
+   FLOATING RIGHT-SIDE PRO THEME TOGGLE (APPLE HIG GLASS PILL)
+   ========================================================== */
+#theme-toggle-floating {
+  position: fixed;
+  right: 22px;
+  top: 76px;
+  z-index: 920;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-apple), box-shadow 0.2s var(--ease-apple), border-color 0.2s, background 0.3s;
+  color: var(--text-1);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#theme-toggle-floating:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  border-color: var(--accent);
+}
+#theme-toggle-floating:active {
+  transform: scale(0.92);
+}
+#theme-toggle-floating svg {
+  transition: transform 0.3s var(--ease-apple);
+}
+#theme-toggle-floating:hover svg {
+  transform: rotate(20deg);
+}
+
+.theme-icon-sun {
+  display: none;
+  color: #FF9F0A;
+}
+.theme-icon-moon {
+  display: flex;
+  color: var(--text-1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-icon-sun {
+    display: flex;
+  }
+  :root:not([data-theme="light"]) .theme-icon-moon {
+    display: none;
+  }
+}
+html[data-theme="dark"] .theme-icon-sun {
+  display: flex;
+}
+html[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+html[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+html[data-theme="light"] .theme-icon-moon {
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  #theme-toggle-floating {
+    top: 66px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -838,7 +1004,7 @@ footer {
 #luffy-bubble {
   width: 340px;
   max-width: calc(100vw - 28px);
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(28px) saturate(190%);
   -webkit-backdrop-filter: blur(28px) saturate(190%);
   border: 1px solid var(--glass-border);
@@ -848,7 +1014,7 @@ footer {
   margin-bottom: 12px;
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.22s var(--ease-apple), transform 0.22s var(--ease-apple), visibility 0.22s;
+  transition: opacity 0.22s var(--ease-apple), transform 0.22s var(--ease-apple), visibility 0.22s, background 0.3s, border-color 0.3s;
   transform: translateY(0) scale(1);
   transform-origin: bottom right;
   font-family: inherit;
@@ -861,11 +1027,18 @@ footer {
   pointer-events: none;
 }
 
+html[data-theme="dark"] #luffy-bubble,
 @media (prefers-color-scheme: dark) {
-  #luffy-bubble {
-    background: rgba(28, 28, 30, 0.94);
-    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.3);
+  :root:not([data-theme="light"]) #luffy-bubble {
+    background: rgba(24, 24, 28, 0.96) !important;
+    border-color: rgba(255, 255, 255, 0.14) !important;
+    box-shadow: 0 24px 54px rgba(0, 0, 0, 0.75), 0 4px 16px rgba(0, 0, 0, 0.4) !important;
   }
+}
+html[data-theme="dark"] #luffy-bubble {
+  background: rgba(24, 24, 28, 0.96) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.75), 0 4px 16px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Pointer arrow to Luffy */
@@ -876,16 +1049,58 @@ footer {
   right: 42px;
   width: 12px;
   height: 12px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.95);
   border-right: 1px solid var(--glass-border);
   border-bottom: 1px solid var(--glass-border);
   transform: rotate(45deg);
+  transition: background 0.3s, border-color 0.3s;
 }
 
+html[data-theme="dark"] #luffy-bubble::after,
 @media (prefers-color-scheme: dark) {
-  #luffy-bubble::after {
-    background: rgba(28, 28, 30, 0.94);
+  :root:not([data-theme="light"]) #luffy-bubble::after {
+    background: rgba(24, 24, 28, 0.96) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
   }
+}
+html[data-theme="dark"] #luffy-bubble::after {
+  background: rgba(24, 24, 28, 0.96) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
+
+/* Dark Mode Chip Polish */
+html[data-theme="dark"] .bubble-chip,
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bubble-chip {
+    background: rgba(255, 255, 255, 0.08);
+    color: #F5F5F7;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  :root:not([data-theme="light"]) .bubble-chip:hover {
+    background: rgba(255, 255, 255, 0.16);
+    color: #FFFFFF;
+  }
+  :root:not([data-theme="light"]) .bubble-chip.primary {
+    background: #0A84FF;
+    color: #FFFFFF;
+    border-color: #0A84FF;
+  }
+}
+html[data-theme="dark"] .bubble-chip {
+  background: rgba(255, 255, 255, 0.08);
+  color: #F5F5F7;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .bubble-chip:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+}
+html[data-theme="dark"] .bubble-chip.primary {
+  background: #0A84FF;
+  color: #FFFFFF;
+  border-color: #0A84FF;
 }
 
 /* Bubble Header */
@@ -1226,6 +1441,28 @@ footer {
   </div>
 </nav>
 
+<!-- FLOATING RIGHT-SIDE PRO THEME TOGGLE (DARK / LIGHT) -->
+<button id="theme-toggle-floating" aria-label="Toggle dark and light mode" title="Switch to Pro Dark Mode">
+  <span class="theme-icon-moon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </span>
+  <span class="theme-icon-sun" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </span>
+</button>
+
 <main>
 <header class="hero" id="home">
   <div class="wrap">
@@ -1239,7 +1476,7 @@ footer {
           <a class="btn" href="./cv.html" target="_blank" rel="noopener">Download CV / Resume 📄</a>
         </div>
       </div>
-      <div class="portrait"><b aria-hidden="true">JS</b><img id="me" alt="Portrait of Janak Sanjel"></div>
+      <div class="portrait"><b aria-hidden="true">JS</b><img id="me" alt="Portrait of Janak Sanjel" src="./myphoto.png"></div>
     </div>
     <div class="facts">
       <div><strong>10+</strong>Live production systems</div>
@@ -1378,7 +1615,49 @@ footer {
 </footer>
 
 <script>
-const me=document.getElementById('me'),srcs=['https://raw.githubusercontent.com/janaksanjel/myportfolio/main/img/myphoto.png','https://cdn.jsdelivr.net/gh/janaksanjel/myportfolio@main/img/myphoto.png','./img/myphoto.png'];let si=0;
+/* ==========================================================
+   PRO THEME CONTROLLER (FLOATING RIGHT-SIDE TOGGLE)
+   ========================================================== */
+(function() {
+  const toggleBtn = document.getElementById('theme-toggle-floating');
+  if (!toggleBtn) return;
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('janak_theme', theme);
+    toggleBtn.setAttribute('title', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Pro Dark Mode');
+    toggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Pro Dark Mode');
+  }
+
+  // Initial load
+  const savedTheme = localStorage.getItem('janak_theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    applyTheme(savedTheme);
+  } else {
+    applyTheme(getSystemTheme());
+  }
+
+  // Toggle on click
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const currentTheme = document.documentElement.getAttribute('data-theme') || getSystemTheme();
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  });
+
+  // Listen to OS system theme change if not manually chosen
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('janak_theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+})();
+
+const me=document.getElementById('me'),srcs=['./myphoto.png','./img/myphoto.png','https://raw.githubusercontent.com/janaksanjel/myportfolio/main/img/myphoto.png'];let si=0;
 me.onerror=()=>{si++;si<srcs.length?me.src=srcs[si]:me.remove()};me.src=srcs[0];
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 const onScroll=()=>nav.classList.toggle('scrolled',scrollY>8);onScroll();addEventListener('scroll',onScroll,{passive:true});
