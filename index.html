@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janak Sanjel — Full Stack Developer & Project Lead</title>
+<meta name="description" content="Janak Sanjel builds backend systems and web applications with Python and Django, and leads client delivery.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYXBwbGVHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDdBRkYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU4NTZENiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzdWJ0bGVHbG93IiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIj4KICAgICAgPGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjIiIHN0ZERldmlhdGlvbj0iMi41IiBmbG9vZC1jb2xvcj0iIzAwN0FGRiIgZmxvb2Qtb3BhY2l0eT0iMC4yNSIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxzdHlsZT4KICAgIC5iZyB7IGZpbGw6ICMxRDFEMUY7IHRyYW5zaXRpb246IGZpbGwgMC4zczsgfQogICAgLm1hcmsgeyBmaWxsOiB1cmwoI2FwcGxlR3JhZGllbnQpOyB9CiAgICAubGV0dGVyIHsgZmlsbDogI0ZGRkZGRjsgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNGIFBybyBEaXNwbGF5Iiwgc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IDcwMDsgfQogICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgewogICAgICAuYmcgeyBmaWxsOiAjMUMxQzFFOyB9CiAgICB9CiAgPC9zdHlsZT4KICAKICA8IS0tIEFwcGxlLXN0eWxlIFNxdWlyY2xlIENvbnRhaW5lciAtLT4KICA8cmVjdCBjbGFzcz0iYmciIHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE2IiAvPgogIAogIDwhLS0gTW9kZXJuIEdlb21ldHJpYyAiSlMiIE1vbm9ncmFtIC0tPgogIDxnIGZpbHRlcj0idXJsKCNzdWJ0bGVHbG93KSI+CiAgICA8IS0tIFN0eWxpemVkIEogLS0+CiAgICA8cGF0aCBkPSJNIDIzIDE4IEwgMjkgMTggTCAyOSAzNyBDIDI5IDQyIDI1IDQ1IDIwIDQ1IEMgMTYuNSA0NSAxNCA0MyAxMyA0MC41IEwgMTcuNSAzOCBDIDE4IDM5LjIgMTkgNDAuMiAyMC4yIDQwLjIgQyAyMi4yIDQwLjIgMjMuNSAzOSAyMy41IDM2LjUgTCAyMy41IDE4IFoiIGZpbGw9InVybCgjYXBwbGVHcmFkaWVudCkiIC8+CiAgICA8IS0tIFN0eWxpemVkIFMgSW50ZXJsb2NraW5nIC0tPgogICAgPHBhdGggZD0iTSA0NC41IDI0IEMgNDMuNSAyMC41IDQwIDE4IDM1LjUgMTggQyAzMC41IDE4IDI3IDIxIDI3IDI1IEMgMjcgMjguNSAyOS41IDMwLjUgMzQgMzEuOCBMIDM2LjUgMzIuNSBDIDM5LjUgMzMuNCA0MSAzNC42IDQxIDM2LjUgQyA0MSAzOSAzOC41IDQwLjUgMzUgNDAuNSBDIDMxLjUgNDAuNSAyOSAzOC41IDI4LjIgMzUuNSBMIDIzLjUgMzcuNSBDIDI0LjggNDIgMjkgNDUgMzUgNDUgQyA0MiA0NSA0Ni41IDQxLjUgNDYuNSAzNiBDIDQ2LjUgMzIgNDMuNSAyOS44IDM5IDI4LjUgTCAzNi41IDI3LjggQyAzMy41IDI2LjggMzIuMiAyNS44IDMyLjIgMjQuMiBDIDMyLjIgMjIuMiAzNCAyMSAzNiAyMSBDIDM4LjUgMjEgNDAuMiAyMi4yIDQxIDI0LjIgTCA0NC41IDI0IFoiIGZpbGw9IiNGRkZGRkYiIC8+CiAgPC9nPgo8L3N2Zz4=">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   APPLE DESIGN SYSTEM — HUMAN INTERFACE GUIDELINES
+   ========================================================== */
+:root {
+  /* System Backgrounds */
+  --bg: #FFFFFF;
+  --bg-grouped: #F5F5F7;
+  --surface: #FFFFFF;
+  --surface-secondary: #F5F5F7;
+  --surface-tertiary: #E5E5EA;
+
+  /* System Typography Colors */
+  --text-1: #1D1D1F;
+  --text-2: #6E6E73;
+  --text-3: #8E8E93;
+
+  /* Separators & Materials */
+  --separator: rgba(60, 60, 67, 0.12);
+  --separator-opaque: #E5E5EA;
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(60, 60, 67, 0.12);
+
+  /* Apple System Accents & Semantic Colors */
+  --accent: #007AFF;
+  --accent-pressed: #0062CC;
+  --accent-subtle: rgba(0, 122, 255, 0.10);
+  --success: #34C759;
+  --success-subtle: rgba(52, 199, 89, 0.12);
+  --tint-fill: rgba(120, 120, 128, 0.08);
+  --tint-fill-hover: rgba(120, 120, 128, 0.14);
+  --tint-fill-active: rgba(120, 120, 128, 0.20);
+
+  /* Depth & Shadows */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-sheet: 0 20px 48px rgba(0, 0, 0, 0.12), 0 4px 14px rgba(0, 0, 0, 0.04);
+
+  /* Spacing & Radii */
+  --max: 980px;
+  --pad: clamp(20px, 5vw, 40px);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 980px;
+
+  /* Easing */
+  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Native Dark Mode Adaptation */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-grouped: #121214;
+    --surface: #1C1C1E;
+    --surface-secondary: #2C2C2E;
+    --surface-tertiary: #3A3A3C;
+
+    --text-1: #F5F5F7;
+    --text-2: #8E8E93;
+    --text-3: #636366;
+
+    --separator: rgba(255, 255, 255, 0.12);
+    --separator-opaque: #38383A;
+    --glass-bg: rgba(28, 28, 30, 0.82);
+    --glass-border: rgba(255, 255, 255, 0.12);
+
+    --accent: #0A84FF;
+    --accent-pressed: #409CFF;
+    --accent-subtle: rgba(10, 132, 255, 0.16);
+    --success: #30D158;
+    --success-subtle: rgba(48, 209, 88, 0.16);
+    --tint-fill: rgba(255, 255, 255, 0.08);
+    --tint-fill-hover: rgba(255, 255, 255, 0.14);
+    --tint-fill-active: rgba(255, 255, 255, 0.22);
+
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+    --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.45);
+    --shadow-sheet: 0 20px 48px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Reset & Foundation */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-1);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+  overflow-x: hidden;
+  transition: background 0.3s var(--ease-apple), color 0.3s var(--ease-apple);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ul {
+  list-style: none;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* ==========================================================
+   NAVIGATION BAR (APPLE TRANSLUCENT FROSTED GLASS)
+   ========================================================== */
+nav#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--separator);
+  transition: border-color 0.2s, background 0.2s;
+}
+.nav-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+}
+.brand {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.015em;
+  color: var(--text-1);
+  transition: opacity 0.15s;
+}
+.brand:hover {
+  opacity: 0.8;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.links a {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-2);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  transition: all 0.18s var(--ease-apple);
+}
+.links a:hover {
+  color: var(--text-1);
+  background: var(--tint-fill);
+}
+.links a:active {
+  background: var(--tint-fill-active);
+  transform: scale(0.97);
+}
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-pill);
+}
+
+/* ==========================================================
+   HERO SECTION
+   ========================================================== */
+.hero {
+  padding: clamp(60px, 9vw, 100px) 0 clamp(48px, 7vw, 76px);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 56px;
+  align-items: center;
+}
+.hero .role {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: clamp(2.2rem, 4.8vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+  max-width: 22ch;
+  color: var(--text-1);
+}
+.hero p.intro {
+  color: var(--text-2);
+  font-size: 1.08rem;
+  line-height: 1.55;
+  max-width: 52ch;
+}
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.18s var(--ease-apple);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.btn.primary {
+  background: var(--text-1);
+  color: var(--bg);
+}
+.btn.primary:hover {
+  opacity: 0.9;
+}
+.btn.primary:active {
+  transform: scale(0.97);
+}
+.btn:not(.primary) {
+  background: var(--tint-fill);
+  color: var(--text-1);
+}
+.btn:not(.primary):hover {
+  background: var(--tint-fill-hover);
+}
+.btn:not(.primary):active {
+  background: var(--tint-fill-active);
+  transform: scale(0.97);
+}
+
+/* Portrait */
+.portrait {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--surface-secondary);
+  border: 1px solid var(--separator);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.25s var(--ease-apple), box-shadow 0.25s var(--ease-apple);
+}
+.portrait:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+.portrait b {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-3);
+  letter-spacing: -0.03em;
+}
+.portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Apple Metrics Surface */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 56px;
+  padding: 24px 28px;
+  background: var(--surface-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--separator);
+}
+.facts div {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+.facts strong {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--text-1);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+
+/* ==========================================================
+   SECTIONS & TYPOGRAPHY
+   ========================================================== */
+section {
+  padding: clamp(52px, 8vw, 84px) 0;
+  border-top: 1px solid var(--separator);
+}
+.sec {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: clamp(24px, 5vw, 56px);
+}
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text-1);
+}
+
+/* ==========================================================
+   PROJECTS (APPLE GROUPED CARDS)
+   ========================================================== */
+.proj {
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.2s var(--ease-apple), box-shadow 0.2s var(--ease-apple), border-color 0.2s;
+}
+.proj:last-child {
+  margin-bottom: 0;
+}
+.proj:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(60, 60, 67, 0.2);
+}
+.proj-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+}
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  color: var(--text-2);
+  background: var(--tint-fill);
+  letter-spacing: 0.01em;
+}
+.tag.company {
+  background: var(--tint-fill);
+  color: var(--text-2);
+}
+.tag.personal {
+  background: var(--accent-subtle);
+  color: var(--accent);
+}
+.proj p {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 62ch;
+}
+.stack {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+.stack b {
+  font-weight: 500;
+  color: var(--text-2);
+}
+.visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  transition: opacity 0.15s;
+}
+.visit:hover {
+  opacity: 0.8;
+}
+.sub {
+  margin: 36px 0 16px;
+  font-size: 0.88rem;
+  color: var(--text-2);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================
+   ABOUT / EXPERIENCE / SKILLS (INSET GROUPED LISTS)
+   ========================================================== */
+.prose p {
+  font-size: 0.98rem;
+  color: var(--text-1);
+  max-width: 62ch;
+  line-height: 1.6;
+}
+.prose p + p {
+  margin-top: 16px;
+  color: var(--text-2);
+}
+.edu {
+  margin-top: 32px;
+  background: var(--surface-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--separator);
+  overflow: hidden;
+}
+.edu div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--separator);
+  font-size: 0.92rem;
+}
+.edu div:last-child {
+  border-bottom: 0;
+}
+.edu span {
+  color: var(--text-2);
+  text-align: right;
+  font-size: 0.86rem;
+}
+.job h3 {
+  font-size: 1.15rem;
+  color: var(--text-1);
+}
+.job .meta {
+  color: var(--text-2);
+  font-size: 0.9rem;
+  margin: 2px 0 16px;
+}
+.job ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--text-2);
+  max-width: 64ch;
+}
+.job li {
+  margin-bottom: 8px;
+  padding-left: 4px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.job li::marker {
+  color: var(--text-3);
+}
+
+/* Technical Expertise Grouped Table */
+.skills {
+  background: var(--surface-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--separator);
+  overflow: hidden;
+}
+.skills div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--separator);
+  font-size: 0.92rem;
+}
+.skills div:last-child {
+  border-bottom: 0;
+}
+.skills dt {
+  font-weight: 600;
+  color: var(--text-1);
+}
+.skills dd {
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   CONTACT SECTION
+   ========================================================== */
+.contact h2.big {
+  font-size: clamp(1.8rem, 3.8vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  color: var(--text-1);
+}
+.contact p {
+  color: var(--text-2);
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
+.clist {
+  background: var(--surface-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--separator);
+  overflow: hidden;
+}
+.clist a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--separator);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-1);
+  transition: background 0.15s;
+}
+.clist a:last-child {
+  border-bottom: 0;
+}
+.clist a:hover {
+  background: var(--tint-fill-hover);
+}
+.clist a span {
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.avail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+.avail li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.avail li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+footer {
+  border-top: 1px solid var(--separator);
+  padding: 36px 0 48px;
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.foot nav {
+  display: flex;
+  gap: 18px;
+  background: none;
+  backdrop-filter: none;
+  border: 0;
+}
+.foot a {
+  color: var(--text-2);
+  transition: color 0.15s;
+}
+.foot a:hover {
+  color: var(--text-1);
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVENESS (APPLE HIG SAFE-AREAS)
+   ========================================================== */
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .portrait {
+    width: 130px;
+    order: -1;
+    border-radius: 20px;
+  }
+  .sec {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 20px;
+  }
+  .burger {
+    display: block;
+  }
+  .links {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px) saturate(190%);
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    border-bottom: 1px solid var(--separator);
+    padding: 6px var(--pad) 14px;
+    box-shadow: var(--shadow-card);
+  }
+  nav.open .links {
+    display: flex;
+  }
+  .links a {
+    padding: 12px 6px;
+    font-size: 0.95rem;
+    color: var(--text-1);
+    border-bottom: 1px solid var(--separator);
+    border-radius: 0;
+  }
+  .links a:last-child {
+    border-bottom: 0;
+  }
+  .cta .btn {
+    flex: 1 1 100%;
+    height: 46px;
+  }
+  .skills div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .edu div {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .edu span {
+    text-align: left;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ==========================================================
+   MONKEY D. LUFFY GUIDE — NATIVE APPLE POPOVER SHEET
+   ========================================================== */
+#luffy-pet-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 28px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+}
+#luffy-pet-wrap * {
+  pointer-events: auto;
+}
+
+/* Avatar Box - Fixed, No Dragging */
+.luffy-pet-avatar {
+  position: relative;
+  width: 96px;
+  height: 106px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s var(--ease-apple);
+  -webkit-tap-highlight-color: transparent;
+}
+.luffy-pet-avatar:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+.luffy-pet-avatar:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+/* Ground shadow underneath sandals */
+.luffy-shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 7px;
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Luffy Sprite - z-index: 2 ensures sandals are 100% visible */
+.luffy-sprite {
+  position: relative;
+  z-index: 2;
+  width: 96px;
+  height: 104px;
+  background-image: url('spritesheet.webp');
+  background-size: 768px 936px;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Sprite Animation States */
+@keyframes animWaiting {
+  from { background-position: 0px 0px; }
+  to { background-position: -576px 0px; }
+}
+.luffy-sprite.waiting {
+  animation: animWaiting 0.72s steps(6) infinite;
+}
+
+@keyframes animWaving {
+  from { background-position: 0px -312px; }
+  to { background-position: -384px -312px; }
+}
+.luffy-sprite.waving {
+  animation: animWaving 0.48s steps(4) infinite;
+}
+
+@keyframes animJumping {
+  from { background-position: 0px -416px; }
+  to { background-position: -480px -416px; }
+}
+.luffy-sprite.jumping {
+  animation: animJumping 0.6s steps(5) infinite;
+}
+
+@keyframes animIdle {
+  from { background-position: 0px -624px; }
+  to { background-position: -576px -624px; }
+}
+.luffy-sprite.idle {
+  animation: animIdle 0.72s steps(6) infinite;
+}
+
+@keyframes animReview {
+  from { background-position: 0px -832px; }
+  to { background-position: -576px -832px; }
+}
+.luffy-sprite.review {
+  animation: animReview 0.72s steps(6) infinite;
+}
+
+/* Floating Emotion Indicator */
+.luffy-emote {
+  position: absolute;
+  top: -6px;
+  right: 6px;
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  box-shadow: var(--shadow-subtle);
+  opacity: 0;
+  pointer-events: none;
+}
+.luffy-emote.pop {
+  animation: emotePop 1.6s var(--ease-apple) forwards;
+}
+@keyframes emotePop {
+  0% { opacity: 0; transform: scale(0.3) translateY(10px); }
+  20% { opacity: 1; transform: scale(1.15) translateY(-3px); }
+  35% { transform: scale(1) translateY(0); }
+  75% { opacity: 1; transform: scale(1) translateY(-1px); }
+  100% { opacity: 0; transform: scale(0.7) translateY(-16px); }
+}
+
+/* APPLE FROSTED GLASS SPEECH POPOVER */
+#luffy-bubble {
+  width: 324px;
+  max-width: calc(100vw - 32px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sheet);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.22s var(--ease-apple), transform 0.22s var(--ease-apple), visibility 0.22s;
+  transform: translateY(0) scale(1);
+  transform-origin: bottom right;
+  font-family: inherit;
+  position: relative;
+}
+#luffy-bubble.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px) scale(0.95);
+  pointer-events: none;
+}
+
+/* Pointer arrow to Luffy */
+#luffy-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 42px;
+  width: 12px;
+  height: 12px;
+  background: var(--glass-bg);
+  border-right: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  transform: rotate(45deg);
+}
+
+/* Bubble Header */
+.bubble-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--separator);
+}
+.bubble-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+}
+.bubble-status {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  display: inline-block;
+}
+.bubble-tools {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bubble-btn-tool {
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: 0.82rem;
+  transition: all 0.15s;
+  line-height: 1;
+}
+.bubble-btn-tool:hover {
+  background: var(--tint-fill-hover);
+  color: var(--text-1);
+}
+.bubble-btn-tool:active {
+  transform: scale(0.92);
+}
+
+/* Dialogue text */
+.bubble-body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-1);
+  min-height: 44px;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+.bubble-body p {
+  margin: 0;
+  color: var(--text-1);
+}
+.bubble-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--accent);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: cursorBlink 0.7s infinite;
+}
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Action Chips (Apple Segmented Pills) */
+.bubble-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.bubble-chip {
+  background: var(--tint-fill);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-1);
+  cursor: pointer;
+  transition: all 0.15s var(--ease-apple);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.bubble-chip:hover {
+  background: var(--tint-fill-hover);
+  color: var(--text-1);
+}
+.bubble-chip:active {
+  transform: scale(0.96);
+  background: var(--tint-fill-active);
+}
+.bubble-chip.primary {
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.bubble-chip.primary:hover {
+  background: var(--accent-pressed);
+}
+
+/* Tour navigation inside bubble */
+.bubble-tour-nav {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--separator);
+  margin-top: 10px;
+  width: 100%;
+}
+.bubble-tour-nav.active {
+  display: flex;
+}
+.bubble-tour-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+.bubble-tour-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-subtle);
+  border-radius: var(--radius-pill);
+  padding: 2px 9px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.bubble-tour-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+.bubble-tour-btns {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+.bubble-tour-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+  font-size: 0.78rem;
+  font-weight: 500;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: var(--tint-fill);
+  color: var(--text-1);
+  cursor: pointer;
+  transition: all 0.15s var(--ease-apple);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.bubble-tour-btn:hover {
+  background: var(--tint-fill-hover);
+}
+.bubble-tour-btn:active {
+  transform: scale(0.96);
+}
+.bubble-tour-btn.prev {
+  flex: 1;
+}
+.bubble-tour-btn.next {
+  flex: 1.4;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.bubble-tour-btn.next:hover {
+  background: var(--accent-pressed);
+}
+.bubble-tour-btn.exit {
+  flex: 0 0 auto;
+  color: var(--text-2);
+  padding: 0 10px;
+}
+.bubble-tour-btn.exit:hover {
+  color: #FF3B30;
+  background: rgba(255, 59, 48, 0.10);
+}
+
+/* Highlight section during tour */
+.tour-highlight {
+  position: relative;
+  transition: outline 0.3s var(--ease-apple) !important;
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 8px;
+  border-radius: var(--radius-lg);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 760px) {
+  #luffy-pet-wrap {
+    bottom: 12px;
+    right: 12px;
+  }
+  #luffy-bubble {
+    width: calc(100vw - 24px);
+    max-width: 350px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+  }
+  .bubble-body {
+    font-size: 0.86rem;
+    min-height: 40px;
+  }
+  .bubble-chip {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    min-height: 32px;
+  }
+  .bubble-tour-btn {
+    height: 36px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #luffy-pet-wrap {
+    bottom: 8px;
+    right: 8px;
+  }
+  #luffy-bubble {
+    width: calc(100vw - 16px);
+    padding: 12px 14px;
+    border-radius: var(--radius-lg);
+  }
+  .bubble-tour-meta {
+    gap: 4px;
+  }
+  .bubble-tour-badge {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+  }
+  .bubble-tour-title {
+    font-size: 0.75rem;
+  }
+  .bubble-tour-btns {
+    gap: 4px;
+  }
+  .bubble-tour-btn {
+    padding: 0 8px;
+    font-size: 0.75rem;
+  }
+}
+
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#home">
+      <svg class="brand-logo" viewBox="0 0 64 64" width="22" height="22" style="vertical-align: middle; margin-right: 8px; border-radius: 6px;">
+        <rect width="64" height="64" rx="16" fill="#1D1D1F" />
+        <path d="M 23 18 L 29 18 L 29 37 C 29 42 25 45 20 45 C 16.5 45 14 43 13 40.5 L 17.5 38 C 18 39.2 19 40.2 20.2 40.2 C 22.2 40.2 23.5 39 23.5 36.5 L 23.5 18 Z" fill="#007AFF" />
+        <path d="M 44.5 24 C 43.5 20.5 40 18 35.5 18 C 30.5 18 27 21 27 25 C 27 28.5 29.5 30.5 34 31.8 L 36.5 32.5 C 39.5 33.4 41 34.6 41 36.5 C 41 39 38.5 40.5 35 40.5 C 31.5 40.5 29 38.5 28.2 35.5 L 23.5 37.5 C 24.8 42 29 45 35 45 C 42 45 46.5 41.5 46.5 36 C 46.5 32 43.5 29.8 39 28.5 L 36.5 27.8 C 33.5 26.8 32.2 25.8 32.2 24.2 C 32.2 22.2 34 21 36 21 C 38.5 21 40.2 22.2 41 24.2 L 44.5 24 Z" fill="#FFFFFF" />
+      </svg>
+      <span>Janak Sanjel</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <div class="links">
+      <a href="#home">Home</a><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<header class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="role">Full Stack Developer &amp; Project Lead</p>
+        <h1>Building software that solves real-world problems.</h1>
+        <p class="intro">I’m a backend-focused engineer in Lalitpur, Nepal. I design APIs, database schemas, and deployments for client systems, from accounting ledgers to government offices.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">View my work</a>
+          <a class="btn" href="https://www.janak.info.np/" target="_blank" rel="noopener">Download resume</a>
+        </div>
+      </div>
+      <div class="portrait"><b aria-hidden="true">JS</b><img id="me" alt="Portrait of Janak Sanjel"></div>
+    </div>
+    <div class="facts">
+      <div><strong>10+</strong>Live production systems</div>
+      <div><strong>10+</strong>Concurrent client projects</div>
+      <div><strong>1</strong>App on Google Play</div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap sec">
+    <h2>Selected work</h2>
+    <div>
+      <article class="proj">
+        <div class="proj-top"><h3>Accounting Software</h3><span class="tag personal">Personal</span><span class="tag">Currently working</span></div>
+        <p>A small-business accounting system covering income and expense tracking, invoicing, ledger management, financial reports, and balance sheets.</p>
+        <p class="stack"><b>Project Manager &amp; Full Stack Developer</b> · Django, ReactJS, MySQL</p>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>FilesWow</h3><span class="tag personal">Personal</span><span class="tag">Live</span></div>
+        <p>A privacy-first toolkit of 100+ free PDF, document, and image utilities. Files are processed in the browser, so most work never needs a server upload.</p>
+        <p class="stack"><b>Founder &amp; Full-Stack Developer</b> · TypeScript, JavaScript, CSS</p>
+        <a class="visit" href="https://www.fileswow.com/" target="_blank" rel="noopener">fileswow.com</a>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>GWP Palika Software</h3><span class="tag company">Company</span><span class="tag">Live in production</span></div>
+        <p>A digital operations suite for Nepali local government offices. I built backend modules for citizen records, reporting, and service workflows.</p>
+        <p class="stack"><b>Backend Developer</b> · Java, Grails, MySQL</p>
+        <a class="visit" href="https://gwp.nirc.com.np/" target="_blank" rel="noopener">gwp.nirc.com.np</a>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>Training Management System</h3><span class="tag company">Company</span><span class="tag">Live in production</span></div>
+        <p>An institute management platform for course scheduling, student enrolment, attendance tracking, and progress reporting.</p>
+        <p class="stack"><b>Project Manager &amp; Full Stack Developer</b> · Django, ReactJS, MySQL</p>
+        <a class="visit" href="https://training.nirc.com.np/" target="_blank" rel="noopener">training.nirc.com.np</a>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>Gym Management System</h3><span class="tag company">Company</span><span class="tag">Live in production</span></div>
+        <p>Member registration, subscription billing, attendance tracking, and staff management, built with full end-to-end ownership.</p>
+        <p class="stack"><b>Project Manager &amp; Full Stack Developer</b> · Django, ReactJS, MySQL</p>
+        <a class="visit" href="https://gym.nirc.com.np/" target="_blank" rel="noopener">gym.nirc.com.np</a>
+      </article>
+      <p class="sub">Other projects</p>
+      <article class="proj">
+        <div class="proj-top"><h3>Kiran Restaurant &amp; Dealership CRM</h3><span class="tag personal">Personal</span></div>
+        <p>Customer records, sales pipelines, and follow-up workflows for a restaurant and a vehicle dealership. Django, ReactJS, MySQL.</p>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>OrderUP</h3><span class="tag personal">Personal</span></div>
+        <p>Online food ordering with dynamic menus, a live cart, and checkout. Node.js, ReactJS.</p>
+      </article>
+      <article class="proj">
+        <div class="proj-top"><h3>Free Tools Suite</h3><span class="tag personal">Personal</span></div>
+        <p>Caption generators, blog writers, and YouTube tools for content creators. ReactJS, JavaScript.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap sec">
+    <h2>About</h2>
+    <div class="prose">
+      <p>I’m a full-stack developer and project manager who owns backend delivery: REST API design, relational schemas, and deployment. At NIRC I’ve shipped more than ten live systems, mostly on Python and Django with React frontends.</p>
+      <p>I also run sprint planning, talk to clients directly, and mentor junior engineers. My database background is MySQL-heavy, and I’m now building applied skills in AWS and PostgreSQL, aiming for larger-scale, cloud-native backend work.</p>
+      <div class="edu">
+        <div><b>BCA, Jana Bhawana Campus</b><span>Graduated 2025 · CGPA 3.19 / 4.0</span></div>
+        <div><b>+2 Science, Advance Academy College</b><span>2077 BS · GPA 2.97</span></div>
+        <div><b>SLC, Bidhyadhishwari Secondary School</b><span>2073 BS · GPA 3.15</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap sec">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Full Stack Developer</h3>
+      <p class="meta">NIRC (National Incubation &amp; Research Center) · Dec 2024 – Present · Kathmandu, Nepal</p>
+      <ul>
+        <li>Project manager and developer across 10+ concurrent client projects: requirements, sprint planning, client communication, and delivery.</li>
+        <li>Owned schema design, REST API contracts, and deployment for 10+ live production systems.</li>
+        <li>Built Django REST Framework backends with ReactJS frontends. Working directly with clients cut feedback cycles by about 30%.</li>
+        <li>Designed MySQL schemas for accounting ledgers, recruitment pipelines, gym subscriptions, training records, and municipal data.</li>
+        <li>Used event-driven patterns to separate long-running work, such as notifications and report generation, from request cycles.</li>
+        <li>Built a Flutter app and managed it from development to release on the Google Play Store.</li>
+        <li>Led code reviews and technical planning, and mentored junior engineers on API design and Django best practices.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap sec">
+    <h2>Technical expertise</h2>
+    <dl class="skills">
+      <div><dt>Backend</dt><dd>Python (primary), Django, Django REST Framework, REST API design, event-driven patterns, Node.js, Java, Grails</dd></div>
+      <div><dt>Frontend</dt><dd>ReactJS, Next.js, JavaScript, TypeScript, HTML5, CSS3</dd></div>
+      <div><dt>Mobile</dt><dd>Flutter, Dart, Android, published on Google Play</dd></div>
+      <div><dt>Databases</dt><dd>MySQL (schema design, query optimisation, indexing), Django ORM, PostgreSQL (developing)</dd></div>
+      <div><dt>Tools &amp; cloud</dt><dd>Git, GitHub, deployment and rollback workflows, AWS (developing)</dd></div>
+      <div><dt>Delivery</dt><dd>Project management, sprint planning, Agile / Scrum, client communication, mentoring</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap sec">
+    <h2>Contact</h2>
+    <div>
+      <h2 class="big">Let’s build something meaningful.</h2>
+      <p>Tell me what you’re working on. I’m open to relocation and available immediately.</p>
+      <div class="clist">
+        <a href="mailto:janaksanjel12@gmail.com">Email <span>janaksanjel12@gmail.com</span></a>
+        <a href="https://github.com/janaksanjel" target="_blank" rel="noopener">GitHub <span>github.com/janaksanjel</span></a>
+        <a href="https://linkedin.com/in/janaksanjel" target="_blank" rel="noopener">LinkedIn <span>linkedin.com/in/janaksanjel</span></a>
+      </div>
+      <ul class="avail"><li>Open to relocation</li><li>Available immediately</li><li>References on request</li></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>© 2026 Janak Sanjel · Full Stack Developer &amp; Project Lead</p>
+    <nav aria-label="Social links">
+      <a href="https://github.com/janaksanjel" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/janaksanjel" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/janaksanjel" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://instagram.com/janaksanjel" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://janak.info.np" target="_blank" rel="noopener">Website</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const me=document.getElementById('me'),srcs=['https://raw.githubusercontent.com/janaksanjel/myportfolio/main/img/myphoto.png','https://cdn.jsdelivr.net/gh/janaksanjel/myportfolio@main/img/myphoto.png','./img/myphoto.png'];let si=0;
+me.onerror=()=>{si++;si<srcs.length?me.src=srcs[si]:me.remove()};me.src=srcs[0];
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+const onScroll=()=>nav.classList.toggle('scrolled',scrollY>8);onScroll();addEventListener('scroll',onScroll,{passive:true});
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+</script>
+
+<!-- CLEAN STATIONARY & CURSOR JUMPING LUFFY GUIDE WIDGET -->
+<div id="luffy-pet-wrap" role="region" aria-label="Luffy Codex Pet Guide">
+  <!-- Clean Minimalist Speech Bubble -->
+  <div id="luffy-bubble" class="hidden" role="dialog" aria-live="polite">
+    <div class="bubble-header">
+      <div class="bubble-title">
+        <span class="bubble-status"></span>
+        <span>Luffy · Guide</span>
+      </div>
+      <div class="bubble-tools">
+        <button id="luffy-sound-btn" class="bubble-btn-tool" title="Toggle mechanical keyboard sound" aria-label="Toggle audio">🔊</button>
+        <button id="luffy-close-btn" class="bubble-btn-tool" title="Close guide" aria-label="Close guide">✕</button>
+      </div>
+    </div>
+
+    <div class="bubble-body">
+      <p id="luffy-text">Shishishi! I'm Luffy! Welcome to Janak's portfolio ship!<span class="bubble-cursor"></span></p>
+    </div>
+
+    <!-- Quick Action Chips -->
+    <div id="luffy-actions" class="bubble-actions">
+      <button class="bubble-chip primary" data-act="tour">Take Tour</button>
+      <button class="bubble-chip" data-act="portrait">Point at Janak 📸</button>
+      <button class="bubble-chip" data-act="projects">Top Work</button>
+      <button class="bubble-chip" data-act="skills">Skills</button>
+      <button class="bubble-chip" data-act="contact">Contact</button>
+      <button class="bubble-chip" data-act="funfact">Fun Fact</button>
+    </div>
+
+    <!-- Tour Navigation Strip -->
+    <div id="luffy-tour-nav" class="bubble-tour-nav">
+      <div class="bubble-tour-meta">
+        <span id="luffy-tour-badge" class="bubble-tour-badge">Step 1 of 6</span>
+        <span id="luffy-tour-title" class="bubble-tour-title">Meet Janak</span>
+      </div>
+      <div class="bubble-tour-btns">
+        <button id="luffy-tour-prev" class="bubble-tour-btn prev">← Back</button>
+        <button id="luffy-tour-next" class="bubble-tour-btn next">Next →</button>
+        <button id="luffy-tour-exit" class="bubble-tour-btn exit" title="Exit Tour">✕ Exit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated Luffy Pet Sprite (Fixed, 100% visible feet & sandals) -->
+  <div class="luffy-pet-avatar" id="luffy-avatar" role="button" tabindex="0" title="Move your cursor near me or click to guide!" aria-label="Luffy Codex Pet">
+    <div class="luffy-sprite waiting" id="luffy-sprite"></div>
+    <div class="luffy-shadow"></div>
+    <div id="luffy-emote" class="luffy-emote">
+      <span id="luffy-emote-char">🍖</span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+/* ==========================================================
+   STATIONARY & CURSOR JUMPING LUFFY GUIDE CONTROLLER
+   ========================================================== */
+(function() {
+  class PetAudio {
+    constructor() {
+      this.ctx = null;
+      const stored = localStorage.getItem('luffy_sound_enabled');
+      this.enabled = stored !== null ? stored === 'true' : true;
+      
+      // Real Mechanical Keyboard Typing Audio
+      this.typingAudio = new Audio('./freesound_community-fast-typing-on-mechanical-keyboard-28197.mp3');
+      this.typingAudio.loop = true;
+      this.typingAudio.volume = 0.35;
+      this.typingAudio.preload = 'auto';
+    }
+
+    init() {
+      if (!this.ctx) {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) this.ctx = new AudioCtx();
+      }
+      if (this.ctx && this.ctx.state === 'suspended') {
+        this.ctx.resume();
+      }
+    }
+
+    toggle() {
+      this.enabled = !this.enabled;
+      localStorage.setItem('luffy_sound_enabled', this.enabled);
+      if (!this.enabled && this.typingAudio) {
+        this.typingAudio.pause();
+      }
+      if (this.enabled) {
+        this.playClick();
+      }
+      return this.enabled;
+    }
+
+    // Play real mechanical keyboard sound while typing
+    startTyping() {
+      if (!this.enabled || !this.typingAudio) return;
+      try {
+        this.typingAudio.volume = 0.35;
+        if (this.typingAudio.paused) {
+          // Organic variation in starting point
+          this.typingAudio.currentTime = Math.random() * 4;
+        }
+        const p = this.typingAudio.play();
+        if (p && p.catch) p.catch(() => {});
+      } catch (e) {}
+    }
+
+    stopTyping() {
+      if (!this.typingAudio) return;
+      try {
+        this.typingAudio.pause();
+      } catch (e) {}
+    }
+
+    playClick() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+      try {
+        const now = this.ctx.currentTime;
+        const thock = this.ctx.createOscillator();
+        const thockGain = this.ctx.createGain();
+        thock.type = 'triangle';
+        thock.frequency.setValueAtTime(220, now);
+        thock.frequency.exponentialRampToValueAtTime(110, now + 0.03);
+        thockGain.gain.setValueAtTime(0.05, now);
+        thockGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.035);
+        thock.connect(thockGain);
+        thockGain.connect(this.ctx.destination);
+        thock.start(now);
+        thock.stop(now + 0.04);
+      } catch(e) {}
+    }
+
+    playChime() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+      [587, 740, 880].forEach((freq, idx) => {
+        setTimeout(() => {
+          try {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            const now = this.ctx.currentTime;
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, now);
+            gain.gain.setValueAtTime(0.04, now);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.22);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(now);
+            osc.stop(now + 0.24);
+          } catch(e) {}
+        }, idx * 60);
+      });
+    }
+  }
+
+  const sound = new PetAudio();
+
+  // Elements
+  const avatarEl = document.getElementById('luffy-avatar');
+  const spriteEl = document.getElementById('luffy-sprite');
+  const bubbleEl = document.getElementById('luffy-bubble');
+  const textEl = document.getElementById('luffy-text');
+  const emoteEl = document.getElementById('luffy-emote');
+  const emoteChar = document.getElementById('luffy-emote-char');
+  const soundBtn = document.getElementById('luffy-sound-btn');
+  const closeBtn = document.getElementById('luffy-close-btn');
+  const actionsWrap = document.getElementById('luffy-actions');
+  const tourNav = document.getElementById('luffy-tour-nav');
+  const tourBadgeEl = document.getElementById('luffy-tour-badge');
+  const tourTitleEl = document.getElementById('luffy-tour-title');
+  const tourPrevBtn = document.getElementById('luffy-tour-prev');
+  const tourNextBtn = document.getElementById('luffy-tour-next');
+  const tourExitBtn = document.getElementById('luffy-tour-exit');
+
+  // Sound sync
+  const updateSoundUI = () => {
+    soundBtn.textContent = sound.enabled ? '🔊' : '🔇';
+    soundBtn.title = sound.enabled ? 'Mechanical Keyboard Sound: ON (Click to mute)' : 'Mechanical Keyboard Sound: MUTED (Click to unmute)';
+  };
+  updateSoundUI();
+  soundBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound.toggle();
+    updateSoundUI();
+  });
+
+  // Sprite animation state
+  const cleanMoves = ['waiting', 'waving', 'jumping', 'idle', 'review'];
+  function setMove(moveName) {
+    cleanMoves.forEach(m => spriteEl.classList.remove(m));
+    spriteEl.classList.add(moveName);
+  }
+
+  let isTalking = false;
+
+  // CURSOR PROXIMITY DETECTION: "when someone goes near with cursor, happily jump!"
+  let isNear = false;
+  let jumpCooldown = false;
+
+  window.addEventListener('mousemove', (e) => {
+    const rect = avatarEl.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const dist = Math.hypot(e.clientX - centerX, e.clientY - centerY);
+
+    if (dist < 140) {
+      if (!isNear) {
+        isNear = true;
+        if (!jumpCooldown && !isTalking) {
+          jumpCooldown = true;
+          // Luffy happily JUMPS when the cursor moves near!
+          setMove('jumping');
+          sound.playMechanicalKey(true);
+          triggerEmote('✨');
+
+          setTimeout(() => {
+            if (isNear) {
+              setMove('waving');
+            } else {
+              setMove('waiting');
+            }
+          }, 620);
+
+          setTimeout(() => {
+            jumpCooldown = false;
+          }, 2400);
+        } else if (!isTalking) {
+          setMove('waving');
+        }
+      }
+    } else {
+      if (isNear) {
+        isNear = false;
+        if (!isTalking) {
+          setMove('waiting');
+        }
+      }
+    }
+  });
+
+  // Click on avatar
+  avatarEl.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound.playClick();
+    isTalking = true;
+    setMove('waving');
+
+    if (bubbleEl.classList.contains('hidden')) {
+      openGuide("Shishishi! I'm Luffy! 🍖 Welcome to Janak's portfolio! Click 'Take Tour' or choose a section!");
+    } else {
+      triggerEmote('🍖');
+      setMove('jumping');
+      speakRandomRemark();
+    }
+  });
+
+  // Close guide
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound.playClick();
+    closeGuide();
+  });
+
+  function closeGuide() {
+    bubbleEl.classList.add('hidden');
+    isTalking = false;
+    setMove('waiting');
+  }
+
+  function openGuide(initialText = "") {
+    bubbleEl.classList.remove('hidden');
+    isTalking = true;
+    if (initialText) {
+      speak(initialText);
+    }
+  }
+
+  // Typewriter text speaking
+  let typeTimer = null;
+  function speak(text, onComplete) {
+    if (typeTimer) clearInterval(typeTimer);
+    sound.stopTyping();
+
+    textEl.innerHTML = '<span class="bubble-cursor"></span>';
+    let i = 0;
+    const speedMs = 18;
+
+    // Start playing authentic mechanical keyboard MP3 sound!
+    sound.startTyping();
+
+    typeTimer = setInterval(() => {
+      if (i < text.length) {
+        textEl.innerHTML = text.slice(0, i + 1) + '<span class="bubble-cursor"></span>';
+        i++;
+      } else {
+        clearInterval(typeTimer);
+        typeTimer = null;
+        textEl.innerHTML = text;
+        // Stop mechanical keyboard audio when text finishes typing
+        sound.stopTyping();
+        if (onComplete) onComplete();
+      }
+    }, speedMs);
+  }
+
+  function triggerEmote(char = '🍖') {
+    emoteChar.textContent = char;
+    emoteEl.classList.remove('pop');
+    void emoteEl.offsetWidth;
+    emoteEl.classList.add('pop');
+  }
+
+  // Random remarks
+  const remarks = [
+    { text: "Shishishi! Janak is our master backend engineer! 10+ live systems running strong! 🍖", emote: "🍖", move: "jumping" },
+    { text: "Check out FilesWow! Over 100 free utilities running right in the browser! ⚡", emote: "💡", move: "review" },
+    { text: "Janak managed over 10 concurrent client projects at NIRC and cut feedback cycles by 30%! 🏆", emote: "⭐", move: "waving" },
+    { text: "Ready to recruit Janak? He's open to relocation and available immediately! 📬", emote: "✨", move: "jumping" }
+  ];
+  let remarkIdx = 0;
+  function speakRandomRemark() {
+    const item = remarks[remarkIdx % remarks.length];
+    remarkIdx++;
+    triggerEmote(item.emote);
+    setMove(item.move);
+    speak(item.text, () => {
+      setTimeout(() => setMove('waiting'), 1800);
+    });
+  }
+
+  // GUIDED TOUR
+  const tourSteps = [
+    {
+      targetSelector: ".portrait",
+      stepNum: "Step 1 of 6",
+      stepTitle: "Meet Janak",
+      text: "📸 Look, here is Captain Janak! A Full Stack Developer & Project Lead in Nepal with 10+ production systems and an app on Google Play!",
+      move: "waving"
+    },
+    {
+      targetSelector: "#work",
+      stepNum: "Step 2 of 6",
+      stepTitle: "Selected Work",
+      text: "💼 Here are his key projects: FilesWow (100+ browser tools), GWP Palika municipal government software, and Accounting Systems!",
+      move: "review"
+    },
+    {
+      targetSelector: ".edu",
+      stepNum: "Step 3 of 6",
+      stepTitle: "About & Education",
+      text: "📘 Janak holds a BCA degree (3.19 CGPA) and specializes in building reliable REST APIs, database schemas, and scalable cloud delivery.",
+      move: "waiting"
+    },
+    {
+      targetSelector: ".job",
+      stepNum: "Step 4 of 6",
+      stepTitle: "Experience at NIRC",
+      text: "🏢 At NIRC, he led 10+ concurrent client projects, managed sprint voyages, and cut feedback cycles by 30% through direct leadership!",
+      move: "jumping"
+    },
+    {
+      targetSelector: ".skills",
+      stepNum: "Step 5 of 6",
+      stepTitle: "Technical Arsenal",
+      text: "⚡ Core strengths: Python, Django REST, MySQL query optimization, event-driven pipelines, React, TypeScript, and Flutter!",
+      move: "review"
+    },
+    {
+      targetSelector: ".contact",
+      stepNum: "Step 6 of 6",
+      stepTitle: "Get in Touch",
+      text: "📫 Janak is open to relocation & ready immediately! Reach out at janaksanjel12@gmail.com or via LinkedIn!",
+      move: "jumping"
+    }
+  ];
+
+  let currentTourStep = -1;
+  let tourActive = false;
+
+  function setHighlight(elementIdOrSelector, activate) {
+    let el = typeof elementIdOrSelector === 'string' && elementIdOrSelector.startsWith('.')
+      ? document.querySelector(elementIdOrSelector)
+      : document.getElementById(elementIdOrSelector);
+    if (!el && typeof elementIdOrSelector === 'string') el = document.querySelector(elementIdOrSelector);
+    if (!el) return;
+    if (activate) {
+      document.querySelectorAll('.tour-highlight').forEach(node => node.classList.remove('tour-highlight'));
+      el.classList.add('tour-highlight');
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      el.classList.remove('tour-highlight');
+    }
+  }
+
+  function startTour() {
+    tourActive = true;
+    currentTourStep = 0;
+    sound.playChime();
+    actionsWrap.style.display = 'none';
+    tourNav.classList.add('active');
+    renderTourStep();
+  }
+
+  function endTour() {
+    tourActive = false;
+    if (currentTourStep >= 0 && currentTourStep < tourSteps.length) {
+      setHighlight(tourSteps[currentTourStep].targetSelector, false);
+    }
+    currentTourStep = -1;
+    tourNav.classList.remove('active');
+    actionsWrap.style.display = 'flex';
+    sound.playClick();
+    speak("Tour completed! Shishishi! Click any project to visit or reach out to Janak anytime! 🎉", () => {
+      setMove('jumping');
+      setTimeout(() => setMove('waiting'), 2000);
+    });
+  }
+
+  function renderTourStep() {
+    if (currentTourStep < 0 || currentTourStep >= tourSteps.length) return;
+    const step = tourSteps[currentTourStep];
+    setHighlight(step.targetSelector, true);
+    if (tourBadgeEl) tourBadgeEl.textContent = step.stepNum;
+    if (tourTitleEl) tourTitleEl.textContent = step.stepTitle;
+    tourPrevBtn.style.visibility = currentTourStep === 0 ? 'hidden' : 'visible';
+    tourNextBtn.textContent = (currentTourStep === tourSteps.length - 1) ? 'Finish ✓' : 'Next →';
+    setMove(step.move);
+    openGuide();
+    speak(step.text);
+  }
+
+  tourPrevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound.playClick();
+    if (currentTourStep > 0) {
+      setHighlight(tourSteps[currentTourStep].targetSelector, false);
+      currentTourStep--;
+      renderTourStep();
+    }
+  });
+
+  tourNextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound.playClick();
+    if (currentTourStep < tourSteps.length - 1) {
+      setHighlight(tourSteps[currentTourStep].targetSelector, false);
+      currentTourStep++;
+      renderTourStep();
+    } else {
+      endTour();
+    }
+  });
+
+  tourExitBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    endTour();
+  });
+
+  // Action chips
+  actionsWrap.addEventListener('click', (e) => {
+    const btn = e.target.closest('.bubble-chip');
+    if (!btn) return;
+    const act = btn.getAttribute('data-act');
+    sound.playClick();
+
+    switch (act) {
+      case 'tour':
+        startTour();
+        break;
+      case 'portrait':
+        setHighlight('.portrait', true);
+        setMove('waving');
+        triggerEmote('📸');
+        speak("Look, that's Janak Sanjel! Backend engineer & project lead based in Lalitpur, Nepal! 10+ live systems delivered!");
+        break;
+      case 'projects':
+        setHighlight('work', true);
+        setMove('review');
+        speak("Here is Janak's selected work! FilesWow has 100+ tools, and GWP Palika runs in production for government offices!");
+        break;
+      case 'skills':
+        setHighlight('skills', true);
+        setMove('review');
+        speak("Janak specializes in Python, Django REST, MySQL query optimization, React, and Flutter!");
+        break;
+      case 'contact':
+        setHighlight('contact', true);
+        setMove('jumping');
+        speak("Reach out at janaksanjel12@gmail.com! Janak is available immediately and open to relocation!");
+        break;
+      case 'funfact':
+        setMove('jumping');
+        triggerEmote('🍖');
+        const facts = [
+          "Janak has delivered over 10 live production systems spanning accounting, government, gym & training!",
+          "FilesWow processes files right in your browser, keeping user data 100% private without server uploads!",
+          "Janak built a Flutter app from scratch and published it directly onto the Google Play Store!"
+        ];
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        speak("Fun Fact: " + randomFact);
+        break;
+    }
+  });
+
+})();
+</script>
+
+
+
+<script>
+/* ==========================================================
+   APPLE SMOOTH TACTILE SOUND & HAPTIC INTERACTION SYSTEM
+   ========================================================== */
+(function() {
+  class AppleHaptics {
+    constructor() {
+      this.ctx = null;
+      const stored = localStorage.getItem('apple_sound_enabled');
+      this.enabled = stored !== null ? stored === 'true' : true;
+    }
+
+    init() {
+      if (!this.ctx) {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) this.ctx = new AudioCtx();
+      }
+      if (this.ctx && this.ctx.state === 'suspended') {
+        this.ctx.resume();
+      }
+    }
+
+    // Smooth subtle Apple tactile tap (whisper-quiet, low-frequency 160Hz -> 80Hz)
+    playTap() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+      try {
+        const now = this.ctx.currentTime;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(180, now);
+        osc.frequency.exponentialRampToValueAtTime(70, now + 0.035);
+        gain.gain.setValueAtTime(0.04, now);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.04);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.045);
+      } catch(e) {}
+    }
+
+    // Smooth soft chime for primary actions
+    playSoftChime() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+      try {
+        const now = this.ctx.currentTime;
+        [523.25, 659.25].forEach((freq, i) => {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          const t = now + (i * 0.04);
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, t);
+          gain.gain.setValueAtTime(0.025, t);
+          gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.22);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.25);
+        });
+      } catch(e) {}
+    }
+  }
+
+  const haptics = new AppleHaptics();
+
+  // Attach calm, smooth tactile feedback to interactive controls
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('a, button, .bubble-chip, .btn, .proj, .clist a');
+    if (!target) return;
+    if (target.classList.contains('primary') || target.classList.contains('next')) {
+      haptics.playSoftChime();
+    } else {
+      haptics.playTap();
+    }
+  }, { passive: true });
+
+  window.AppleHaptics = haptics;
+})();
+</script>
+
+</body>
+</html>

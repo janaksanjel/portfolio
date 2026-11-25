@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janak Sanjel — Professional CV / Resume</title>
+<meta name="description" content="Curriculum Vitae of Janak Sanjel, Full Stack Developer and Project Lead in Nepal.">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   PRO CLEAN CV & RESUME — APPLE EXECUTIVE DESIGN
+   ========================================================== */
+:root {
+  --bg: #F5F5F7;
+  --sheet: #FFFFFF;
+  --text-1: #1D1D1F;
+  --text-2: #48484A;
+  --text-3: #86868B;
+  --accent: #007AFF;
+  --line: rgba(60, 60, 67, 0.14);
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --sheet: #1C1C1E;
+    --text-1: #F5F5F7;
+    --text-2: #AEAEB2;
+    --text-3: #636366;
+    --line: rgba(255, 255, 255, 0.12);
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-1);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  padding: 32px 16px 64px;
+  min-height: 100vh;
+}
+
+/* Floating Action Toolbar */
+.cv-toolbar {
+  max-width: 840px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.cv-toolbar-btns {
+  display: flex;
+  gap: 8px;
+}
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 980px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s var(--ease);
+  border: 1px solid var(--line);
+  background: var(--sheet);
+  color: var(--text-1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.cv-btn:hover {
+  background: rgba(120, 120, 128, 0.08);
+  transform: translateY(-1px);
+}
+.cv-btn:active {
+  transform: scale(0.97);
+}
+.cv-btn.primary {
+  background: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+.cv-btn.primary:hover {
+  background: #0062CC;
+  border-color: #0062CC;
+}
+
+/* The Professional Resume Document Sheet */
+.cv-sheet {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--sheet);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 48px 56px;
+  position: relative;
+}
+
+/* Header */
+.cv-header {
+  border-bottom: 2px solid var(--text-1);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+.cv-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cv-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-1);
+  line-height: 1.1;
+}
+.cv-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  margin-top: 6px;
+}
+.cv-meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 14px;
+  font-size: 0.86rem;
+  color: var(--text-2);
+}
+.cv-meta-links a {
+  color: var(--text-2);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.cv-meta-links a:hover {
+  color: var(--accent);
+}
+.cv-meta-links span::after {
+  content: " ·";
+  color: var(--text-3);
+  margin-left: 14px;
+}
+.cv-meta-links span:last-child::after {
+  content: "";
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 28px;
+}
+.cv-section:last-child {
+  margin-bottom: 0;
+}
+.cv-sec-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-1);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cv-sec-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/* Summary */
+.cv-summary {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+/* Experience */
+.cv-item {
+  margin-bottom: 18px;
+}
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.cv-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+.cv-item-company {
+  font-weight: 500;
+  color: var(--text-2);
+}
+.cv-item-date {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-3);
+  text-align: right;
+}
+.cv-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+.cv-list li {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.cv-list li::marker {
+  color: var(--text-3);
+}
+
+/* Projects Grid */
+.cv-proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.cv-proj-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(120, 120, 128, 0.05);
+  border: 1px solid var(--line);
+}
+.cv-proj-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.cv-proj-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+.cv-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(0, 122, 255, 0.12);
+  color: var(--accent);
+}
+.cv-proj-desc {
+  font-size: 0.84rem;
+  color: var(--text-2);
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+.cv-proj-stack {
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+.cv-proj-stack b {
+  color: var(--text-2);
+}
+
+/* Technical Competencies */
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+.cv-skill-group {
+  font-size: 0.88rem;
+}
+.cv-skill-name {
+  font-weight: 600;
+  color: var(--text-1);
+  margin-right: 6px;
+}
+.cv-skill-vals {
+  color: var(--text-2);
+}
+
+/* Education Rows */
+.cv-edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.cv-edu-row:last-child {
+  border-bottom: 0;
+}
+.cv-edu-degree {
+  font-weight: 600;
+  color: var(--text-1);
+}
+.cv-edu-detail {
+  color: var(--text-3);
+  font-size: 0.85rem;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+  .cv-toolbar {
+    display: none !important;
+  }
+  .cv-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .cv-header {
+    border-bottom: 2px solid #000000 !important;
+  }
+  .cv-name {
+    color: #000000 !important;
+  }
+  .cv-role {
+    color: #000000 !important;
+  }
+  .cv-meta-links, .cv-summary, .cv-list li, .cv-proj-desc, .cv-skill-vals {
+    color: #333333 !important;
+  }
+  .cv-proj-card {
+    background: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+    break-inside: avoid;
+  }
+  .cv-item {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 16px 12px 48px;
+  }
+  .cv-sheet {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+  .cv-name {
+    font-size: 1.8rem;
+  }
+  .cv-proj-grid, .cv-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Action Bar -->
+<div class="cv-toolbar">
+  <a href="./index.html" class="cv-btn">← Back to Portfolio</a>
+  <div class="cv-toolbar-btns">
+    <button onclick="window.print()" class="cv-btn primary">🖨️ Print / Save PDF</button>
+    <a href="mailto:janaksanjel12@gmail.com" class="cv-btn">📧 Contact</a>
+  </div>
+</div>
+
+<!-- Professional Resume Document Sheet -->
+<main class="cv-sheet" id="cv-doc">
+  <!-- Header Section -->
+  <header class="cv-header">
+    <div class="cv-title-row">
+      <div>
+        <h1 class="cv-name" id="cv-name">Janak Sanjel</h1>
+        <p class="cv-role" id="cv-role">Full Stack Developer &amp; Project Lead</p>
+      </div>
+    </div>
+    <div class="cv-meta-links" id="cv-meta">
+      <span>📍 Lalitpur, Nepal</span>
+      <span>✉️ <a href="mailto:janaksanjel12@gmail.com">janaksanjel12@gmail.com</a></span>
+      <span>🌐 <a href="https://janak.info.np" target="_blank" rel="noopener">janak.info.np</a></span>
+      <span>💻 <a href="https://github.com/janaksanjel" target="_blank" rel="noopener">github.com/janaksanjel</a></span>
+      <span>💼 <a href="https://linkedin.com/in/janaksanjel" target="_blank" rel="noopener">linkedin.com/in/janaksanjel</a></span>
+    </div>
+  </header>
+
+  <!-- Executive Summary -->
+  <section class="cv-section">
+    <h2 class="cv-sec-title">Executive Summary</h2>
+    <p class="cv-summary" id="cv-summary">
+      Results-driven Full Stack Developer and Project Lead with extensive experience architecting and shipping 10+ concurrent live client systems. Proven track record owning REST API contracts, relational MySQL schemas, and deployments across government operations, enterprise accounting, and consumer applications. Strong communicator who directly manages client sprints and cuts delivery cycles by 30%.
+    </p>
+  </section>
+
+  <!-- Technical Competencies -->
+  <section class="cv-section">
+    <h2 class="cv-sec-title">Technical Expertise</h2>
+    <div class="cv-skills-grid" id="cv-skills">
+      <div class="cv-skill-group"><span class="cv-skill-name">Backend:</span><span class="cv-skill-vals">Python, Django, Django REST Framework, REST API design, Node.js, Java, Grails</span></div>
+      <div class="cv-skill-group"><span class="cv-skill-name">Frontend:</span><span class="cv-skill-vals">ReactJS, Next.js, JavaScript, TypeScript, HTML5, CSS3</span></div>
+      <div class="cv-skill-group"><span class="cv-skill-name">Mobile:</span><span class="cv-skill-vals">Flutter, Dart, Android SDK, published on Google Play</span></div>
+      <div class="cv-skill-group"><span class="cv-skill-name">Databases:</span><span class="cv-skill-vals">MySQL (schema design, query optimization, indexing), Django ORM, PostgreSQL</span></div>
+      <div class="cv-skill-group"><span class="cv-skill-name">DevOps &amp; Cloud:</span><span class="cv-skill-vals">Git, GitHub, deployment and rollback workflows, AWS</span></div>
+      <div class="cv-skill-group"><span class="cv-skill-name">Leadership:</span><span class="cv-skill-vals">Project management, sprint planning, Agile / Scrum, client communication, mentoring</span></div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+  <section class="cv-section">
+    <h2 class="cv-sec-title">Professional Experience</h2>
+    <div id="cv-experience">
+      <article class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-item-title">Full Stack Developer &amp; Project Manager</span> · 
+            <span class="cv-item-company">NIRC (National Incubation &amp; Research Center)</span>
+          </div>
+          <div class="cv-item-date">Dec 2024 – Present · Kathmandu, Nepal</div>
+        </div>
+        <ul class="cv-list">
+          <li>Project manager and lead developer across 10+ concurrent client projects: gathered requirements, ran sprint voyages, and ensured on-time milestone delivery.</li>
+          <li>Owned schema design, REST API contracts, and deployment pipelines for 10+ live production systems.</li>
+          <li>Built Django REST Framework backends with ReactJS frontends; direct client communication cut feedback cycles by ~30%.</li>
+          <li>Designed MySQL schemas for accounting ledgers, recruitment pipelines, gym subscriptions, training records, and municipal data.</li>
+          <li>Used event-driven patterns to separate long-running asynchronous tasks (notifications, PDF reports) from request cycles.</li>
+          <li>Developed and published a production Flutter application onto the Google Play Store.</li>
+          <li>Conducted code reviews, led technical architectural planning, and mentored junior engineers on Django best practices.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Key Production Systems & Projects -->
+  <section class="cv-section">
+    <h2 class="cv-sec-title">Selected Production Systems</h2>
+    <div class="cv-proj-grid" id="cv-projects">
+      <div class="cv-proj-card">
+        <div class="cv-proj-head">
+          <span class="cv-proj-title">FilesWow</span>
+          <span class="cv-tag">Live · Browser-First</span>
+        </div>
+        <p class="cv-proj-desc">Privacy-first suite of 100+ free browser PDF and image tools; runs client-side without server upload.</p>
+        <p class="cv-proj-stack"><b>Stack:</b> TypeScript, JavaScript, CSS · fileswow.com</p>
+      </div>
+
+      <div class="cv-proj-card">
+        <div class="cv-proj-head">
+          <span class="cv-proj-title">GWP Palika Software</span>
+          <span class="cv-tag">Live in Production</span>
+        </div>
+        <p class="cv-proj-desc">Digital operations platform for Nepali municipal government offices covering citizen workflows and records.</p>
+        <p class="cv-proj-stack"><b>Stack:</b> Java, Grails, MySQL · gwp.nirc.com.np</p>
+      </div>
+
+      <div class="cv-proj-card">
+        <div class="cv-proj-head">
+          <span class="cv-proj-title">Small-Business Accounting System</span>
+          <span class="cv-tag">Production</span>
+        </div>
+        <p class="cv-proj-desc">Complete ledger system: double-entry bookkeeping, invoicing, financial statements, and balance sheets.</p>
+        <p class="cv-proj-stack"><b>Stack:</b> Django, ReactJS, MySQL</p>
+      </div>
+
+      <div class="cv-proj-card">
+        <div class="cv-proj-head">
+          <span class="cv-proj-title">Training Management System</span>
+          <span class="cv-tag">Live in Production</span>
+        </div>
+        <p class="cv-proj-desc">Institutional scheduling, course enrolment, student attendance tracking, and grading records.</p>
+        <p class="cv-proj-stack"><b>Stack:</b> Django, ReactJS, MySQL · training.nirc.com.np</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="cv-section">
+    <h2 class="cv-sec-title">Education</h2>
+    <div id="cv-education">
+      <div class="cv-edu-row">
+        <div><span class="cv-edu-degree">Bachelor of Computer Applications (BCA)</span> — Jana Bhawana Campus</div>
+        <div class="cv-edu-detail">Graduated 2025 · CGPA 3.19 / 4.0</div>
+      </div>
+      <div class="cv-edu-row">
+        <div><span class="cv-edu-degree">+2 Science</span> — Advance Academy College</div>
+        <div class="cv-edu-detail">2077 BS · GPA 2.97</div>
+      </div>
+      <div class="cv-edu-row">
+        <div><span class="cv-edu-degree">School Leaving Certificate (SLC)</span> — Bidhyadhishwari Secondary School</div>
+        <div class="cv-edu-detail">2073 BS · GPA 3.15</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+// Dynamic Sync with data.json
+(function() {
+  fetch('./data.json')
+    .then(r => r.json())
+    .then(data => {
+      if (!data) return;
+      if (data.personal) {
+        if (data.personal.name) document.getElementById('cv-name').textContent = data.personal.name;
+        if (data.personal.role) document.getElementById('cv-role').textContent = data.personal.role;
+        if (data.personal.intro) document.getElementById('cv-summary').textContent = data.personal.intro;
+      }
+    })
+    .catch(() => {});
+})();
+</script>
+
+</body>
+</html>

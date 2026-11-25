@@ -1,0 +1,151 @@
+{
+  "personal": {
+    "name": "Janak Sanjel",
+    "role": "Full Stack Developer & Project Lead",
+    "location": "Lalitpur, Nepal",
+    "email": "janaksanjel12@gmail.com",
+    "website": "https://janak.info.np",
+    "headline": "Building software that solves real-world problems.",
+    "intro": "I’m a backend-focused engineer in Lalitpur, Nepal. I design APIs, database schemas, and deployments for client systems, from accounting ledgers to government offices.",
+    "availability": [
+      "Open to relocation",
+      "Available immediately",
+      "References on request"
+    ],
+    "social": {
+      "github": "https://github.com/janaksanjel",
+      "linkedin": "https://linkedin.com/in/janaksanjel",
+      "twitter": "https://twitter.com/janaksanjel",
+      "instagram": "https://instagram.com/janaksanjel",
+      "website": "https://janak.info.np"
+    }
+  },
+  "facts": [
+    {
+      "value": "10+",
+      "label": "Live production systems"
+    },
+    {
+      "value": "10+",
+      "label": "Concurrent client projects"
+    },
+    {
+      "value": "1",
+      "label": "App on Google Play"
+    }
+  ],
+  "projects": {
+    "featured": [
+      {
+        "title": "Accounting Software",
+        "category": "Personal",
+        "status": "Currently working",
+        "description": "A small-business accounting system covering income and expense tracking, invoicing, ledger management, financial reports, and balance sheets.",
+        "role": "Project Manager & Full Stack Developer",
+        "stack": "Django, ReactJS, MySQL",
+        "link": null
+      },
+      {
+        "title": "FilesWow",
+        "category": "Personal",
+        "status": "Live",
+        "description": "A privacy-first toolkit of 100+ free PDF, document, and image utilities. Files are processed in the browser, so most work never needs a server upload.",
+        "role": "Founder & Full-Stack Developer",
+        "stack": "TypeScript, JavaScript, CSS",
+        "link": "https://www.fileswow.com/"
+      },
+      {
+        "title": "GWP Palika Software",
+        "category": "Company",
+        "status": "Live in production",
+        "description": "A digital operations suite for Nepali local government offices. I built backend modules for citizen records, reporting, and service workflows.",
+        "role": "Backend Developer",
+        "stack": "Java, Grails, MySQL",
+        "link": "https://gwp.nirc.com.np/"
+      },
+      {
+        "title": "Training Management System",
+        "category": "Company",
+        "status": "Live in production",
+        "description": "An institute management platform for course scheduling, student enrolment, attendance tracking, and progress reporting.",
+        "role": "Project Manager & Full Stack Developer",
+        "stack": "Django, ReactJS, MySQL",
+        "link": "https://training.nirc.com.np/"
+      },
+      {
+        "title": "Gym Management System",
+        "category": "Company",
+        "status": "Live in production",
+        "description": "Member registration, subscription billing, attendance tracking, and staff management, built with full end-to-end ownership.",
+        "role": "Project Manager & Full Stack Developer",
+        "stack": "Django, ReactJS, MySQL",
+        "link": "https://gym.nirc.com.np/"
+      }
+    ],
+    "other": [
+      {
+        "title": "Kiran Restaurant & Dealership CRM",
+        "category": "Personal",
+        "description": "Customer records, sales pipelines, and follow-up workflows for a restaurant and a vehicle dealership.",
+        "stack": "Django, ReactJS, MySQL"
+      },
+      {
+        "title": "OrderUP",
+        "category": "Personal",
+        "description": "Online food ordering with dynamic menus, a live cart, and checkout.",
+        "stack": "Node.js, ReactJS"
+      },
+      {
+        "title": "Free Tools Suite",
+        "category": "Personal",
+        "description": "Caption generators, blog writers, and YouTube tools for content creators.",
+        "stack": "ReactJS, JavaScript"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I’m a full-stack developer and project manager who owns backend delivery: REST API design, relational schemas, and deployment. At NIRC I’ve shipped more than ten live systems, mostly on Python and Django with React frontends.",
+      "I also run sprint planning, talk to clients directly, and mentor junior engineers. My database background is MySQL-heavy, and I’m now building applied skills in AWS and PostgreSQL, aiming for larger-scale, cloud-native backend work."
+    ],
+    "education": [
+      {
+        "degree": "BCA, Jana Bhawana Campus",
+        "detail": "Graduated 2025 · CGPA 3.19 / 4.0"
+      },
+      {
+        "degree": "+2 Science, Advance Academy College",
+        "detail": "2077 BS · GPA 2.97"
+      },
+      {
+        "degree": "SLC, Bidhyadhishwari Secondary School",
+        "detail": "2073 BS · GPA 3.15"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full Stack Developer & Project Manager",
+      "company": "NIRC (National Incubation & Research Center)",
+      "period": "Dec 2024 – Present",
+      "location": "Kathmandu, Nepal",
+      "highlights": [
+        "Project manager and developer across 10+ concurrent client projects: requirements, sprint planning, client communication, and delivery.",
+        "Owned schema design, REST API contracts, and deployment for 10+ live production systems.",
+        "Built Django REST Framework backends with ReactJS frontends. Working directly with clients cut feedback cycles by about 30%.",
+        "Designed MySQL schemas for accounting ledgers, recruitment pipelines, gym subscriptions, training records, and municipal data.",
+        "Used event-driven patterns to separate long-running work, such as notifications and report generation, from request cycles.",
+        "Built a Flutter app and managed it from development to release on the Google Play Store.",
+        "Led code reviews and technical planning, and mentored junior engineers on API design and Django best practices."
+      ]
+    }
+  ],
+  "skills": {
+    "Backend": "Python (primary), Django, Django REST Framework, REST API design, event-driven patterns, Node.js, Java, Grails",
+    "Frontend": "ReactJS, Next.js, JavaScript, TypeScript, HTML5, CSS3",
+    "Mobile": "Flutter, Dart, Android, published on Google Play",
+    "Databases": "MySQL (schema design, query optimisation, indexing), Django ORM, PostgreSQL (developing)",
+    "Tools & cloud": "Git, GitHub, deployment and rollback workflows, AWS (developing)",
+    "Delivery": "Project management, sprint planning, Agile / Scrum, client communication, mentoring"
+  }
+}
