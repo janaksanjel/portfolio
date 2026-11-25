@@ -3,38 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Janak Sanjel — Professional CV / Resume</title>
-<meta name="description" content="Curriculum Vitae of Janak Sanjel, Full Stack Developer and Project Lead in Nepal.">
+<title>Janak Sanjel — Professional Curriculum Vitae</title>
+<meta name="description" content="Executive Curriculum Vitae of Janak Sanjel, Full Stack Developer & Project Lead.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="apple-touch-icon" href="./favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================
-   PRO CLEAN CV & RESUME — APPLE EXECUTIVE DESIGN
+   PRO EXECUTIVE FULL-WIDTH RESUME (BALANCED PRINT & SCREEN)
    ========================================================== */
 :root {
-  --bg: #F5F5F7;
-  --sheet: #FFFFFF;
-  --text-1: #1D1D1F;
-  --text-2: #48484A;
-  --text-3: #86868B;
-  --accent: #007AFF;
-  --line: rgba(60, 60, 67, 0.14);
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --bg-canvas: #F2F2F7;
+  --bg-sheet: #FFFFFF;
+  --text-main: #111827;
+  --text-muted: #374151;
+  --text-dim: #6B7280;
+  --accent: #0066CC;
+  --accent-soft: rgba(0, 102, 204, 0.08);
+  --success: #15803D;
+  --success-soft: rgba(21, 128, 61, 0.1);
+  --border: #E5E7EB;
+  --border-dark: #D1D5DB;
+  --card-bg: #F9FAFB;
+  --shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #000000;
-    --sheet: #1C1C1E;
-    --text-1: #F5F5F7;
-    --text-2: #AEAEB2;
-    --text-3: #636366;
-    --line: rgba(255, 255, 255, 0.12);
-    --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --bg-canvas: #09090B;
+    --bg-sheet: #18181B;
+    --text-main: #F4F4F5;
+    --text-muted: #D4D4D8;
+    --text-dim: #A1A1AA;
+    --accent: #38BDF8;
+    --accent-soft: rgba(56, 189, 248, 0.12);
+    --border: #27272A;
+    --border-dark: #3F3F46;
+    --card-bg: #202023;
+    --shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -45,11 +55,11 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, sans-serif;
-  font-size: 14px;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
   line-height: 1.55;
-  color: var(--text-1);
-  background: var(--bg);
+  color: var(--text-main);
+  background: var(--bg-canvas);
   -webkit-font-smoothing: antialiased;
   padding: 32px 16px 64px;
   min-height: 100vh;
@@ -57,7 +67,7 @@ body {
 
 /* Floating Action Toolbar */
 .cv-toolbar {
-  max-width: 840px;
+  max-width: 860px;
   margin: 0 auto 20px;
   display: flex;
   justify-content: space-between;
@@ -71,22 +81,26 @@ body {
 .cv-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   height: 38px;
   padding: 0 16px;
   border-radius: 980px;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.15s var(--ease);
-  border: 1px solid var(--line);
-  background: var(--sheet);
-  color: var(--text-1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  background: var(--bg-sheet);
+  color: var(--text-main);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 .cv-btn:hover {
-  background: rgba(120, 120, 128, 0.08);
+  background: var(--card-bg);
+  border-color: var(--border-dark);
   transform: translateY(-1px);
 }
 .cv-btn:active {
@@ -98,289 +112,865 @@ body {
   border-color: var(--accent);
 }
 .cv-btn.primary:hover {
-  background: #0062CC;
-  border-color: #0062CC;
+  filter: brightness(1.08);
 }
 
-/* The Professional Resume Document Sheet */
-.cv-sheet {
-  max-width: 840px;
+/* Main CV Document Sheet (Balanced Full-Width Architecture) */
+.cv-document {
+  max-width: 860px;
   margin: 0 auto;
-  background: var(--sheet);
-  border-radius: 20px;
+  background: var(--bg-sheet);
+  border-radius: 16px;
   box-shadow: var(--shadow);
-  border: 1px solid var(--line);
-  padding: 48px 56px;
+  border: 1px solid var(--border);
+  padding: 44px 52px;
   position: relative;
 }
 
-/* Header */
+/* Document Header */
 .cv-header {
-  border-bottom: 2px solid var(--text-1);
-  padding-bottom: 24px;
-  margin-bottom: 28px;
+  border-bottom: 2px solid var(--text-main);
+  padding-bottom: 22px;
+  margin-bottom: 24px;
 }
-.cv-title-row {
+.cv-header-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 .cv-name {
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  color: var(--text-1);
+  color: var(--text-main);
   line-height: 1.1;
 }
-.cv-role {
+.cv-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--accent);
-  letter-spacing: -0.01em;
-  margin-top: 6px;
+  letter-spacing: -0.015em;
+  margin-top: 5px;
 }
-.cv-meta-links {
+
+.cv-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+.cv-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+/* Contact Links Bar — Balanced Grid/Wrap Across Entire Width */
+.cv-contact-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
   margin-top: 14px;
-  font-size: 0.86rem;
-  color: var(--text-2);
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
-.cv-meta-links a {
-  color: var(--text-2);
+.cv-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.cv-contact-item a {
+  color: var(--text-muted);
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.15s;
 }
-.cv-meta-links a:hover {
+.cv-contact-item a:hover {
   color: var(--accent);
 }
-.cv-meta-links span::after {
-  content: " ·";
-  color: var(--text-3);
-  margin-left: 14px;
-}
-.cv-meta-links span:last-child::after {
-  content: "";
-}
 
-/* Sections */
+/* Section Containers */
 .cv-section {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 .cv-section:last-child {
   margin-bottom: 0;
 }
 .cv-sec-title {
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-1);
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 6px;
-  margin-bottom: 14px;
+  color: var(--text-main);
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid var(--text-main);
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-.cv-sec-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
+  justify-content: space-between;
 }
 
-/* Summary */
+/* Executive Summary */
 .cv-summary {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   line-height: 1.6;
-  color: var(--text-2);
+  color: var(--text-muted);
+}
+.cv-summary b {
+  color: var(--text-main);
+  font-weight: 600;
 }
 
-/* Experience */
-.cv-item {
+/* Key Metrics Counter Strip (Full Width) */
+.cv-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.cv-metric-box {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cv-metric-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.cv-metric-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+/* Technical Expertise — Balanced 2-Column Full-Width Grid */
+.cv-skills-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+}
+.cv-skill-row {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+}
+.cv-skill-category {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+.cv-skill-items {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Work Experience */
+.cv-exp-item {
   margin-bottom: 18px;
 }
-.cv-item:last-child {
+.cv-exp-item:last-child {
   margin-bottom: 0;
 }
-.cv-item-header {
+.cv-exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
-.cv-item-title {
+.cv-exp-left {
   font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.cv-exp-company {
+  color: var(--accent);
   font-weight: 600;
-  color: var(--text-1);
 }
-.cv-item-company {
+.cv-exp-right {
+  font-size: 0.82rem;
   font-weight: 500;
-  color: var(--text-2);
-}
-.cv-item-date {
-  font-size: 0.84rem;
-  font-weight: 500;
-  color: var(--text-3);
+  color: var(--text-dim);
   text-align: right;
 }
-.cv-list {
+.cv-bullets {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 18px;
   margin-top: 6px;
 }
-.cv-list li {
-  margin-bottom: 6px;
-  font-size: 0.9rem;
-  color: var(--text-2);
+.cv-bullets li {
+  margin-bottom: 5px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
   line-height: 1.5;
 }
-.cv-list li::marker {
-  color: var(--text-3);
+.cv-bullets li::marker {
+  color: var(--text-dim);
+}
+.cv-bullets li b {
+  color: var(--text-main);
+  font-weight: 600;
 }
 
-/* Projects Grid */
-.cv-proj-grid {
+/* Key Production Systems (Full Width 2-Column Grid) */
+.cv-projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  gap: 12px;
 }
 .cv-proj-card {
-  padding: 14px 16px;
-  border-radius: 12px;
-  background: rgba(120, 120, 128, 0.05);
-  border: 1px solid var(--line);
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cv-proj-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   margin-bottom: 4px;
 }
 .cv-proj-title {
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--text-1);
+  color: var(--text-main);
 }
-.cv-tag {
+.cv-proj-badge {
   font-size: 0.72rem;
   font-weight: 600;
   padding: 2px 7px;
   border-radius: 999px;
-  background: rgba(0, 122, 255, 0.12);
+  background: var(--accent-soft);
   color: var(--accent);
+  white-space: nowrap;
 }
 .cv-proj-desc {
-  font-size: 0.84rem;
-  color: var(--text-2);
+  font-size: 0.83rem;
+  color: var(--text-muted);
   line-height: 1.45;
   margin-bottom: 6px;
 }
 .cv-proj-stack {
   font-size: 0.78rem;
-  color: var(--text-3);
+  color: var(--text-dim);
 }
 .cv-proj-stack b {
-  color: var(--text-2);
+  color: var(--text-muted);
+}
+.cv-proj-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
 }
 
-/* Technical Competencies */
-.cv-skills-grid {
+/* Education & Credentials (Balanced 2-Column Grid) */
+.cv-edu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
 }
-.cv-skill-group {
-  font-size: 0.88rem;
-}
-.cv-skill-name {
-  font-weight: 600;
-  color: var(--text-1);
-  margin-right: 6px;
-}
-.cv-skill-vals {
-  color: var(--text-2);
-}
-
-/* Education Rows */
-.cv-edu-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
-}
-.cv-edu-row:last-child {
-  border-bottom: 0;
+.cv-edu-card {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
 }
 .cv-edu-degree {
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text-1);
+  color: var(--text-main);
 }
-.cv-edu-detail {
-  color: var(--text-3);
-  font-size: 0.85rem;
+.cv-edu-school {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+.cv-edu-score {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 2px;
 }
 
-/* Print Optimization */
-@media print {
+/* ==========================================================
+   MOBILE & TABLET RESPONSIVE SYSTEM (APPLE HIG STANDARD)
+   ========================================================== */
+@media screen and (max-width: 768px) {
   body {
-    background: #FFFFFF !important;
-    color: #000000 !important;
-    padding: 0 !important;
+    padding: 14px 10px 60px;
+    overflow-x: hidden;
   }
+
+  /* Responsive Toolbar */
+  .cv-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 14px;
+    width: 100%;
+  }
+  .cv-toolbar > .cv-btn {
+    width: 100%;
+    justify-content: center;
+    height: 42px;
+    font-size: 0.88rem;
+  }
+  .cv-toolbar-btns {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+  .cv-toolbar-btns .cv-btn {
+    flex: 1;
+    justify-content: center;
+    height: 42px;
+    font-size: 0.86rem;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
+  /* Document Sheet Card */
+  .cv-document {
+    padding: 24px 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Header Hierarchy */
+  .cv-header {
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+  .cv-name {
+    font-size: clamp(1.7rem, 6.5vw, 2rem);
+    letter-spacing: -0.025em;
+  }
+  .cv-title {
+    font-size: 0.98rem;
+    margin-top: 4px;
+  }
+  .cv-status-pill {
+    font-size: 0.74rem;
+    padding: 3px 9px;
+  }
+
+  /* Balanced Apple Contact Info Grid */
+  .cv-contact-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding-top: 10px;
+    margin-top: 12px;
+  }
+  .cv-contact-item {
+    font-size: 0.82rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Compact 3-Column Metrics Strip on Mobile (Apple Profile Stats) */
+  .cv-metrics-strip {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .cv-metric-box {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 4px;
+    gap: 4px;
+  }
+  .cv-metric-num {
+    font-size: 1.3rem;
+  }
+  .cv-metric-label {
+    font-size: 0.68rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* Single Column Sections for Skills, Projects, and Education */
+  .cv-skills-table {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .cv-skill-row {
+    padding: 8px 12px;
+  }
+  .cv-skill-items {
+    font-size: 0.84rem;
+  }
+
+  /* Experience Header Alignment on Mobile */
+  .cv-exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+  .cv-exp-left {
+    font-size: 0.94rem;
+    line-height: 1.35;
+  }
+  .cv-exp-right {
+    text-align: left;
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .cv-bullets {
+    padding-left: 16px;
+    margin-top: 6px;
+  }
+  .cv-bullets li {
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+
+  /* Project Cards on Mobile */
+  .cv-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .cv-proj-card {
+    padding: 12px;
+  }
+  .cv-proj-head {
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .cv-proj-title {
+    font-size: 0.92rem;
+  }
+  .cv-proj-desc {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+  .cv-proj-stack {
+    font-size: 0.76rem;
+    word-break: break-word;
+  }
+
+  /* Education Cards on Mobile */
+  .cv-edu-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .cv-edu-card {
+    padding: 10px 12px;
+  }
+  .cv-edu-degree {
+    font-size: 0.86rem;
+  }
+  .cv-edu-school {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Mobile Devices (e.g., iPhone SE, 320px–380px) */
+@media screen and (max-width: 420px) {
+  body {
+    padding: 10px 6px 48px;
+  }
+  .cv-document {
+    padding: 18px 12px;
+    border-radius: 12px;
+  }
+  .cv-name {
+    font-size: 1.55rem;
+  }
+  .cv-toolbar-btns {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .cv-toolbar-btns .cv-btn {
+    width: 100%;
+    height: 40px;
+  }
+  .cv-metrics-strip {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .cv-metric-box {
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    gap: 12px;
+  }
+  .cv-metric-num {
+    font-size: 1.25rem;
+    min-width: 38px;
+  }
+  .cv-metric-label {
+    text-align: left;
+    font-size: 0.74rem;
+  }
+  .cv-sec-title {
+    font-size: 0.78rem;
+  }
+  .cv-bullets {
+    padding-left: 14px;
+  }
+}
+
+.cv-print-footer {
+  display: none;
+}
+
+/* ==========================================================
+   PERFECT EXECUTIVE PRINT SPECIFICATION — FULL PAGE COVERAGE
+   ========================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    font-size: 12.5px !important;
+    line-height: 1.45 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   .cv-toolbar {
     display: none !important;
   }
-  .cv-sheet {
-    box-shadow: none !important;
+
+  .cv-document {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     border: none !important;
     border-radius: 0 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
+    background: #FFFFFF !important;
+    box-shadow: none !important;
   }
+
+  /* Document Header */
   .cv-header {
-    border-bottom: 2px solid #000000 !important;
+    border-bottom: 2px solid #111827 !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 14px !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
   }
   .cv-name {
-    color: #000000 !important;
+    font-size: 2.1rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    letter-spacing: -0.03em !important;
   }
-  .cv-role {
-    color: #000000 !important;
+  .cv-title {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: #004499 !important;
+    margin-top: 3px !important;
   }
-  .cv-meta-links, .cv-summary, .cv-list li, .cv-proj-desc, .cv-skill-vals {
-    color: #333333 !important;
+  .cv-status-pill {
+    display: inline-flex !important;
+    border: 1px solid #15803D !important;
+    background: rgba(21, 128, 61, 0.08) !important;
+    color: #15803D !important;
+    font-size: 0.74rem !important;
+    font-weight: 600 !important;
+    padding: 2px 8px !important;
+    border-radius: 999px !important;
+  }
+  .cv-status-dot {
+    background: #15803D !important;
+  }
+
+  /* Full-Width Balanced Contact Information Bar */
+  .cv-contact-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 6px 14px !important;
+    padding-top: 10px !important;
+    margin-top: 10px !important;
+    border-top: 1px dashed #D1D5DB !important;
+    font-size: 0.82rem !important;
+    color: #374151 !important;
+  }
+  .cv-contact-item a {
+    color: #111827 !important;
+    text-decoration: none !important;
+  }
+
+  /* Key Metrics Strip (Balanced 3 Columns Across 100% Page Width) */
+  .cv-metrics-strip {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+    margin-bottom: 14px !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .cv-metric-box {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 8px 12px !important;
+    background: #F9FAFB !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 6px !important;
+    break-inside: avoid !important;
+  }
+  .cv-metric-num {
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #004499 !important;
+    line-height: 1 !important;
+  }
+  .cv-metric-label {
+    font-size: 0.74rem !important;
+    color: #374151 !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+  }
+
+  /* Section Containers */
+  .cv-section {
+    margin-bottom: 14px !important;
+  }
+  .cv-sec-title {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    border-bottom: 1.5px solid #111827 !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 10px !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  .cv-summary {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    color: #374151 !important;
+  }
+  .cv-summary b {
+    color: #111827 !important;
+  }
+
+  /* Technical Competencies: Balanced 2 Columns Spanning 100% Width */
+  .cv-skills-table {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px 16px !important;
+    break-inside: avoid !important;
+  }
+  .cv-skill-row {
+    padding: 6px 10px !important;
+    background: #F9FAFB !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 6px !important;
+    break-inside: avoid !important;
+  }
+  .cv-skill-category {
+    font-size: 0.74rem !important;
+    font-weight: 700 !important;
+    color: #004499 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 2px !important;
+  }
+  .cv-skill-items {
+    font-size: 0.82rem !important;
+    color: #374151 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Work Experience */
+  .cv-exp-item {
+    margin-bottom: 12px !important;
+    break-inside: avoid !important;
+  }
+  .cv-exp-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    margin-bottom: 4px !important;
+  }
+  .cv-exp-left {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+  }
+  .cv-exp-company {
+    color: #004499 !important;
+    font-weight: 600 !important;
+  }
+  .cv-exp-right {
+    font-size: 0.82rem !important;
+    color: #4B5563 !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+  }
+  .cv-bullets {
+    padding-left: 16px !important;
+    margin-top: 4px !important;
+  }
+  .cv-bullets li {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+    color: #374151 !important;
+    margin-bottom: 4px !important;
+  }
+  .cv-bullets li b {
+    color: #111827 !important;
+  }
+
+  /* Key Production Systems: Balanced 2 Columns Spanning 100% Width */
+  .cv-projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
   }
   .cv-proj-card {
-    background: #FFFFFF !important;
-    border: 1px solid #CCCCCC !important;
-    break-inside: avoid;
+    padding: 10px 12px !important;
+    background: #F9FAFB !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 6px !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
-  .cv-item {
-    break-inside: avoid;
+  .cv-proj-head {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 3px !important;
   }
-}
+  .cv-proj-title {
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    color: #111827 !important;
+  }
+  .cv-proj-badge {
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    padding: 2px 6px !important;
+    border: 1px solid #9CA3AF !important;
+    color: #111827 !important;
+    background: transparent !important;
+    border-radius: 999px !important;
+  }
+  .cv-proj-desc {
+    font-size: 0.8rem !important;
+    color: #374151 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4px !important;
+  }
+  .cv-proj-stack {
+    font-size: 0.74rem !important;
+    color: #4B5563 !important;
+  }
+  .cv-proj-link {
+    color: #004499 !important;
+    text-decoration: none !important;
+  }
 
-@media (max-width: 720px) {
-  body {
-    padding: 16px 12px 48px;
+  /* Education & Credentials: Balanced 2 Columns Spanning 100% Width */
+  .cv-edu-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px 14px !important;
   }
-  .cv-sheet {
-    padding: 28px 20px;
-    border-radius: 16px;
+  .cv-edu-card {
+    padding: 8px 10px !important;
+    background: #F9FAFB !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 6px !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
-  .cv-name {
-    font-size: 1.8rem;
+  .cv-edu-degree {
+    font-size: 0.84rem !important;
+    font-weight: 600 !important;
+    color: #111827 !important;
   }
-  .cv-proj-grid, .cv-skills-grid {
-    grid-template-columns: 1fr;
+  .cv-edu-school {
+    font-size: 0.78rem !important;
+    color: #374151 !important;
+  }
+  .cv-edu-score {
+    font-size: 0.74rem !important;
+    font-weight: 600 !important;
+    color: #004499 !important;
+  }
+
+  /* Clean Section Break between Page 1 and Page 2 */
+  .cv-page-break {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  /* Executive Print Footer */
+  .cv-print-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-top: 1px solid #D1D5DB !important;
+    padding-top: 10px !important;
+    margin-top: 18px !important;
+    font-size: 0.74rem !important;
+    color: #6B7280 !important;
   }
 }
 </style>
@@ -391,136 +981,200 @@ body {
 <div class="cv-toolbar">
   <a href="./index.html" class="cv-btn">← Back to Portfolio</a>
   <div class="cv-toolbar-btns">
-    <button onclick="window.print()" class="cv-btn primary">🖨️ Print / Save PDF</button>
-    <a href="mailto:janaksanjel12@gmail.com" class="cv-btn">📧 Contact</a>
+    <button onclick="window.print()" class="cv-btn primary" title="Print or save as clean PDF">🖨️ Print / Save PDF</button>
+    <a href="mailto:janaksanjel12@gmail.com" class="cv-btn">📧 Contact Janak</a>
   </div>
 </div>
 
-<!-- Professional Resume Document Sheet -->
-<main class="cv-sheet" id="cv-doc">
-  <!-- Header Section -->
+<!-- Main Full-Width CV Document Sheet -->
+<main class="cv-document" id="cv-sheet">
+
+  <!-- Document Header -->
   <header class="cv-header">
-    <div class="cv-title-row">
+    <div class="cv-header-top">
       <div>
-        <h1 class="cv-name" id="cv-name">Janak Sanjel</h1>
-        <p class="cv-role" id="cv-role">Full Stack Developer &amp; Project Lead</p>
+        <h1 class="cv-name">Janak Sanjel</h1>
+        <p class="cv-title">Full Stack Developer &amp; Project Lead</p>
+        <div class="cv-status-pill">
+          <span class="cv-status-dot"></span>
+          <span>Available Immediately · Open to Relocation</span>
+        </div>
       </div>
     </div>
-    <div class="cv-meta-links" id="cv-meta">
-      <span>📍 Lalitpur, Nepal</span>
-      <span>✉️ <a href="mailto:janaksanjel12@gmail.com">janaksanjel12@gmail.com</a></span>
-      <span>🌐 <a href="https://janak.info.np" target="_blank" rel="noopener">janak.info.np</a></span>
-      <span>💻 <a href="https://github.com/janaksanjel" target="_blank" rel="noopener">github.com/janaksanjel</a></span>
-      <span>💼 <a href="https://linkedin.com/in/janaksanjel" target="_blank" rel="noopener">linkedin.com/in/janaksanjel</a></span>
+    
+    <!-- Contact Information Bar (Spans Full Width Evenly) -->
+    <div class="cv-contact-bar">
+      <div class="cv-contact-item">📍 <span>Lalitpur, Nepal</span></div>
+      <div class="cv-contact-item">✉️ <a href="mailto:janaksanjel12@gmail.com">janaksanjel12@gmail.com</a></div>
+      <div class="cv-contact-item">🌐 <a href="https://janaksanjel.com.np/" target="_blank" rel="noopener">janaksanjel.com.np</a></div>
+      <div class="cv-contact-item">💻 <a href="https://github.com/janaksanjel" target="_blank" rel="noopener">github.com/janaksanjel</a></div>
+      <div class="cv-contact-item">💼 <a href="https://linkedin.com/in/janaksanjel" target="_blank" rel="noopener">linkedin.com/in/janaksanjel</a></div>
     </div>
   </header>
 
-  <!-- Executive Summary -->
+  <!-- Key Delivery Highlights (3 Full-Width Balanced Metrics) -->
+  <div class="cv-metrics-strip">
+    <div class="cv-metric-box">
+      <div class="cv-metric-num">10+</div>
+      <div class="cv-metric-label">Live Production Systems Shipped</div>
+    </div>
+    <div class="cv-metric-box">
+      <div class="cv-metric-num">10+</div>
+      <div class="cv-metric-label">Concurrent Client Projects Managed</div>
+    </div>
+    <div class="cv-metric-box">
+      <div class="cv-metric-num">1</div>
+      <div class="cv-metric-label">App Live on Google Play Store</div>
+    </div>
+  </div>
+
+  <!-- Executive Profile Summary -->
   <section class="cv-section">
-    <h2 class="cv-sec-title">Executive Summary</h2>
-    <p class="cv-summary" id="cv-summary">
-      Results-driven Full Stack Developer and Project Lead with extensive experience architecting and shipping 10+ concurrent live client systems. Proven track record owning REST API contracts, relational MySQL schemas, and deployments across government operations, enterprise accounting, and consumer applications. Strong communicator who directly manages client sprints and cuts delivery cycles by 30%.
+    <h2 class="cv-sec-title">Executive Profile</h2>
+    <p class="cv-summary">
+      Results-driven <b>Full Stack Developer and Project Manager</b> with verified leadership delivering <b>10+ live concurrent production platforms</b>. Specializes in designing robust relational schemas (MySQL), high-throughput REST APIs with Django/Python, and responsive user interfaces with React. Direct client-facing technical lead who runs sprint planning, aligns architectural contracts with business objectives, and cuts turnaround cycles by <b>~30%</b>.
     </p>
   </section>
 
-  <!-- Technical Competencies -->
+  <!-- Technical Competencies (Balanced 2-Column Full-Width Grid) -->
   <section class="cv-section">
     <h2 class="cv-sec-title">Technical Expertise</h2>
-    <div class="cv-skills-grid" id="cv-skills">
-      <div class="cv-skill-group"><span class="cv-skill-name">Backend:</span><span class="cv-skill-vals">Python, Django, Django REST Framework, REST API design, Node.js, Java, Grails</span></div>
-      <div class="cv-skill-group"><span class="cv-skill-name">Frontend:</span><span class="cv-skill-vals">ReactJS, Next.js, JavaScript, TypeScript, HTML5, CSS3</span></div>
-      <div class="cv-skill-group"><span class="cv-skill-name">Mobile:</span><span class="cv-skill-vals">Flutter, Dart, Android SDK, published on Google Play</span></div>
-      <div class="cv-skill-group"><span class="cv-skill-name">Databases:</span><span class="cv-skill-vals">MySQL (schema design, query optimization, indexing), Django ORM, PostgreSQL</span></div>
-      <div class="cv-skill-group"><span class="cv-skill-name">DevOps &amp; Cloud:</span><span class="cv-skill-vals">Git, GitHub, deployment and rollback workflows, AWS</span></div>
-      <div class="cv-skill-group"><span class="cv-skill-name">Leadership:</span><span class="cv-skill-vals">Project management, sprint planning, Agile / Scrum, client communication, mentoring</span></div>
+    <div class="cv-skills-table">
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">Backend Architecture</span>
+        <span class="cv-skill-items">Python (primary), Django, Django REST Framework, REST API Design, Event-Driven Patterns, Node.js, Java, Grails</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">Frontend &amp; Web</span>
+        <span class="cv-skill-items">ReactJS, Next.js, JavaScript, TypeScript, HTML5, CSS3, Responsive Design</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">Databases &amp; ORM</span>
+        <span class="cv-skill-items">MySQL (schema architecture, query optimization, indexing), Django ORM, PostgreSQL</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">Mobile &amp; App Delivery</span>
+        <span class="cv-skill-items">Flutter, Dart, Android SDK, App Release Lifecycle on Google Play</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">DevOps &amp; Infrastructure</span>
+        <span class="cv-skill-items">Git, GitHub Actions, Linux / Nginx, Deployment &amp; Rollback Pipelines, AWS</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-category">Leadership &amp; Delivery</span>
+        <span class="cv-skill-items">Project Management, Sprint Planning, Agile / Scrum, Client Communication, Team Mentoring</span>
+      </div>
     </div>
   </section>
 
   <!-- Professional Experience -->
   <section class="cv-section">
     <h2 class="cv-sec-title">Professional Experience</h2>
-    <div id="cv-experience">
-      <article class="cv-item">
-        <div class="cv-item-header">
-          <div>
-            <span class="cv-item-title">Full Stack Developer &amp; Project Manager</span> · 
-            <span class="cv-item-company">NIRC (National Incubation &amp; Research Center)</span>
-          </div>
-          <div class="cv-item-date">Dec 2024 – Present · Kathmandu, Nepal</div>
+    
+    <article class="cv-exp-item">
+      <div class="cv-exp-header">
+        <div class="cv-exp-left">
+          <span>Full Stack Developer &amp; Project Manager</span> — 
+          <span class="cv-exp-company">NIRC (National Incubation &amp; Research Center)</span>
         </div>
-        <ul class="cv-list">
-          <li>Project manager and lead developer across 10+ concurrent client projects: gathered requirements, ran sprint voyages, and ensured on-time milestone delivery.</li>
-          <li>Owned schema design, REST API contracts, and deployment pipelines for 10+ live production systems.</li>
-          <li>Built Django REST Framework backends with ReactJS frontends; direct client communication cut feedback cycles by ~30%.</li>
-          <li>Designed MySQL schemas for accounting ledgers, recruitment pipelines, gym subscriptions, training records, and municipal data.</li>
-          <li>Used event-driven patterns to separate long-running asynchronous tasks (notifications, PDF reports) from request cycles.</li>
-          <li>Developed and published a production Flutter application onto the Google Play Store.</li>
-          <li>Conducted code reviews, led technical architectural planning, and mentored junior engineers on Django best practices.</li>
-        </ul>
-      </article>
-    </div>
+        <div class="cv-exp-right">Dec 2024 – Present · Kathmandu, Nepal</div>
+      </div>
+      <ul class="cv-bullets">
+        <li><b>Client &amp; Sprint Leadership:</b> Managed technical execution and milestones across <b>10+ concurrent client projects</b>, handling requirements discovery, sprint planning, client communications, and final sign-offs. Cut turnaround feedback cycles by <b>30%</b> through direct collaboration.</li>
+        <li><b>Backend Architecture:</b> Owned REST API contracts, Django REST Framework services, and schema designs for 10+ production platforms handling government records, accounting ledgers, and institutional registries.</li>
+        <li><b>Database Optimization:</b> Designed normalized MySQL schemas, query optimization patterns, indexing strategies, and relational constraints ensuring sub-second response times across large dataset queries.</li>
+        <li><b>Event-Driven Processing:</b> Integrated asynchronous worker patterns to isolate long-running operations (automated PDF financial reporting, transactional emails, system notifications) from HTTP cycles.</li>
+        <li><b>Mobile Production App:</b> Engineered and launched a production Flutter mobile app from development to release on the Google Play Store.</li>
+        <li><b>Code Quality &amp; Mentorship:</b> Guided junior engineers on Django best practices, conducted code reviews, and established Git branch delivery standards.</li>
+      </ul>
+    </article>
   </section>
 
-  <!-- Key Production Systems & Projects -->
-  <section class="cv-section">
-    <h2 class="cv-sec-title">Selected Production Systems</h2>
-    <div class="cv-proj-grid" id="cv-projects">
+  <!-- Key Production Systems (Balanced 2-Column Full-Width Grid) -->
+  <section class="cv-section cv-page-break">
+    <h2 class="cv-sec-title">Key Production Systems</h2>
+    
+    <div class="cv-projects-grid">
       <div class="cv-proj-card">
-        <div class="cv-proj-head">
-          <span class="cv-proj-title">FilesWow</span>
-          <span class="cv-tag">Live · Browser-First</span>
+        <div>
+          <div class="cv-proj-head">
+            <span class="cv-proj-title">FilesWow</span>
+            <span class="cv-proj-badge">Founder &amp; Dev</span>
+          </div>
+          <p class="cv-proj-desc">Privacy-first toolkit of 100+ free PDF, document, and image utilities. Processes data client-side in the browser for maximum user privacy without server uploads.</p>
         </div>
-        <p class="cv-proj-desc">Privacy-first suite of 100+ free browser PDF and image tools; runs client-side without server upload.</p>
-        <p class="cv-proj-stack"><b>Stack:</b> TypeScript, JavaScript, CSS · fileswow.com</p>
+        <p class="cv-proj-stack"><b>Stack:</b> TypeScript, JavaScript, CSS · <a class="cv-proj-link" href="https://www.fileswow.com/" target="_blank" rel="noopener">fileswow.com ↗</a></p>
       </div>
 
       <div class="cv-proj-card">
-        <div class="cv-proj-head">
-          <span class="cv-proj-title">GWP Palika Software</span>
-          <span class="cv-tag">Live in Production</span>
+        <div>
+          <div class="cv-proj-head">
+            <span class="cv-proj-title">GWP Palika Operations Suite</span>
+            <span class="cv-proj-badge">Live Production</span>
+          </div>
+          <p class="cv-proj-desc">Digital administrative suite for Nepali local municipal offices. Built backend modules for citizen record indexing, department reporting, and service request workflows.</p>
         </div>
-        <p class="cv-proj-desc">Digital operations platform for Nepali municipal government offices covering citizen workflows and records.</p>
-        <p class="cv-proj-stack"><b>Stack:</b> Java, Grails, MySQL · gwp.nirc.com.np</p>
+        <p class="cv-proj-stack"><b>Stack:</b> Java, Grails, MySQL · <a class="cv-proj-link" href="https://gwp.nirc.com.np/" target="_blank" rel="noopener">gwp.nirc.com.np ↗</a></p>
       </div>
 
       <div class="cv-proj-card">
-        <div class="cv-proj-head">
-          <span class="cv-proj-title">Small-Business Accounting System</span>
-          <span class="cv-tag">Production</span>
+        <div>
+          <div class="cv-proj-head">
+            <span class="cv-proj-title">Enterprise Accounting System</span>
+            <span class="cv-proj-badge">Project Lead</span>
+          </div>
+          <p class="cv-proj-desc">Double-entry accounting system managing multi-entity income/expense ledgers, automatic invoicing, trial balances, and automated financial statements.</p>
         </div>
-        <p class="cv-proj-desc">Complete ledger system: double-entry bookkeeping, invoicing, financial statements, and balance sheets.</p>
         <p class="cv-proj-stack"><b>Stack:</b> Django, ReactJS, MySQL</p>
       </div>
 
       <div class="cv-proj-card">
-        <div class="cv-proj-head">
-          <span class="cv-proj-title">Training Management System</span>
-          <span class="cv-tag">Live in Production</span>
+        <div>
+          <div class="cv-proj-head">
+            <span class="cv-proj-title">Training Management System</span>
+            <span class="cv-proj-badge">Live Production</span>
+          </div>
+          <p class="cv-proj-desc">Centralized platform for course scheduling, student admissions, attendance logging, and automated certification workflows.</p>
         </div>
-        <p class="cv-proj-desc">Institutional scheduling, course enrolment, student attendance tracking, and grading records.</p>
-        <p class="cv-proj-stack"><b>Stack:</b> Django, ReactJS, MySQL · training.nirc.com.np</p>
+        <p class="cv-proj-stack"><b>Stack:</b> Django, ReactJS, MySQL · <a class="cv-proj-link" href="https://training.nirc.com.np/" target="_blank" rel="noopener">training.nirc.com.np ↗</a></p>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
+  <!-- Education & Credentials (Balanced 2-Column Full-Width Grid) -->
   <section class="cv-section">
-    <h2 class="cv-sec-title">Education</h2>
-    <div id="cv-education">
-      <div class="cv-edu-row">
-        <div><span class="cv-edu-degree">Bachelor of Computer Applications (BCA)</span> — Jana Bhawana Campus</div>
-        <div class="cv-edu-detail">Graduated 2025 · CGPA 3.19 / 4.0</div>
+    <h2 class="cv-sec-title">Education &amp; Credentials</h2>
+    <div class="cv-edu-grid">
+      <div class="cv-edu-card">
+        <div class="cv-edu-degree">Bachelor of Computer Applications (BCA)</div>
+        <div class="cv-edu-school">Jana Bhawana Campus, Tribhuvan University</div>
+        <div class="cv-edu-score">Graduated 2025 · CGPA 3.19 / 4.0</div>
       </div>
-      <div class="cv-edu-row">
-        <div><span class="cv-edu-degree">+2 Science</span> — Advance Academy College</div>
-        <div class="cv-edu-detail">2077 BS · GPA 2.97</div>
+      <div class="cv-edu-card">
+        <div class="cv-edu-degree">+2 Science</div>
+        <div class="cv-edu-school">Advance Academy College</div>
+        <div class="cv-edu-score">Completed 2077 BS · GPA 2.97</div>
       </div>
-      <div class="cv-edu-row">
-        <div><span class="cv-edu-degree">School Leaving Certificate (SLC)</span> — Bidhyadhishwari Secondary School</div>
-        <div class="cv-edu-detail">2073 BS · GPA 3.15</div>
+      <div class="cv-edu-card">
+        <div class="cv-edu-degree">School Leaving Certificate (SLC)</div>
+        <div class="cv-edu-school">Bidhyadhishwari Secondary School</div>
+        <div class="cv-edu-score">Completed 2073 BS · GPA 3.15</div>
+      </div>
+      <div class="cv-edu-card">
+        <div class="cv-edu-degree">Languages &amp; Availability</div>
+        <div class="cv-edu-school">English (Professional) · Nepali (Native)</div>
+        <div class="cv-edu-score" style="color: var(--success);">Available Immediately · Open to Relocation</div>
       </div>
     </div>
   </section>
+
+  <!-- Executive Print Footer (Appears on Page 2 in Print) -->
+  <footer class="cv-print-footer">
+    <span>Janak Sanjel — Professional Curriculum Vitae</span>
+    <span>Available Immediately · Open to Relocation</span>
+    <span>https://janaksanjel.com.np/</span>
+  </footer>
+
 </main>
 
 <script>
@@ -531,9 +1185,14 @@ body {
     .then(data => {
       if (!data) return;
       if (data.personal) {
-        if (data.personal.name) document.getElementById('cv-name').textContent = data.personal.name;
-        if (data.personal.role) document.getElementById('cv-role').textContent = data.personal.role;
-        if (data.personal.intro) document.getElementById('cv-summary').textContent = data.personal.intro;
+        if (data.personal.name) {
+          const nameEl = document.querySelector('.cv-name');
+          if (nameEl) nameEl.textContent = data.personal.name;
+        }
+        if (data.personal.role) {
+          const titleEl = document.querySelector('.cv-title');
+          if (titleEl) titleEl.textContent = data.personal.role;
+        }
       }
     })
     .catch(() => {});
